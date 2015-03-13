@@ -1,1 +1,0 @@
-<link rel="stylesheet" href="themes/public/stylesheets/checkoutStatus.css"/>

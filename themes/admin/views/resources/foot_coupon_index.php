@@ -1,1 +1,0 @@
-<script src="themes/admin/views/admin/coupon/javascripts/couponGridCtrl.js"></script>

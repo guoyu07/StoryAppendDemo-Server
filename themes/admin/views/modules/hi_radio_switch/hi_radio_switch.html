@@ -1,9 +1,0 @@
-<div class="radio-switch {{options.class}}"
-     ng-class="{ 'expand': local.show_expand, 'with-notice' : options.notice }">
-	<label ng-repeat="(value, label) in options.items" ng-class="{ 'visible': model[options.name] == value }">
-		<input type="radio" name="{{ options.input_id }}" value="{{ value }}" ng-required="{{ options.required }}"
-		       ng-model="model[options.name]" />
-		<span class="show-label" ng-bind="label" ng-click="toggleExpand()"></span>
-		<span ng-if="options.notice == true" ng-bind="options.comments[value]"></span>
-	</label>
-</div>

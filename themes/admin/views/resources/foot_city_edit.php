@@ -1,1 +1,0 @@
-<script src="themes/admin/views/admin/city/javascripts/cityEditCtrl.js"></script>

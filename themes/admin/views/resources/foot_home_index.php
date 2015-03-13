@@ -1,1 +1,0 @@
-<script src="themes/admin/views/admin/home/javascripts/homeCarouselCtrl.js"></script>

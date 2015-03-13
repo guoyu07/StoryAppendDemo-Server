@@ -1,1 +1,0 @@
-<script src="themes/admin/views/admin/stock/javascripts/stockHistoryCtrl.js"></script>

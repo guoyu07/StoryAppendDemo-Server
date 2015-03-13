@@ -1,1 +1,0 @@
-<script src="themes/admin/views/admin/supplier/javascripts/supplierEditCtrl.js"></script>

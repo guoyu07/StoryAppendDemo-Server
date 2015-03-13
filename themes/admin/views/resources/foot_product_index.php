@@ -1,1 +1,0 @@
-<script src="themes/admin/views/admin/product/javascripts/index.js"></script>

@@ -1,1 +1,0 @@
-<script src="themes/admin/views/admin/errorPage/javascripts/errorPageEditCtrl.js"></script>

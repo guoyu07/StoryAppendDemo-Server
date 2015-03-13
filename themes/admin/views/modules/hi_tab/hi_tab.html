@@ -1,9 +1,0 @@
-<div class="row text-center grid-top">
-    <div class="btn-group hi-tab">
-        <button class="btn" ng-click="options.setCurrentTab( tab )" ng-class="{ 'active': options.current_tab.label == tab.label }" ng-repeat="tab in options.tabs">
-            <span ng-bind="(+$index + 1) + '. ' + tab.label"></span>
-            <span class="i i-eye" ng-show="tab.alert"></span>
-            <span class="i i-refresh refresh-animate" ng-show="tab.loading"></span>
-        </button>
-    </div>
-</div>

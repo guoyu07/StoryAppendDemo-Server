@@ -1,1 +1,0 @@
-<script src="themes/admin/views/admin/edm/javascripts/edmGridCtrl.js"></script>

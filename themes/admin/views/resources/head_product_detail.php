@@ -1,1 +1,0 @@
-<link href="https://api.tiles.mapbox.com/mapbox.js/v2.0.0/mapbox.css" rel="stylesheet" />

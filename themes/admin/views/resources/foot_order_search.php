@@ -1,1 +1,0 @@
-<script src="themes/admin/views/admin/order/javascripts/orderSearchListCtrl.js"></script>

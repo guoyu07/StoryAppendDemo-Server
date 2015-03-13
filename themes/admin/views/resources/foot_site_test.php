@@ -1,1 +1,0 @@
-<script src="themes/admin/views/admin/site/javascripts/siteTestCtrl.js"></script>
