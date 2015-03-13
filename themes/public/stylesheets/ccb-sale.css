@@ -1,0 +1,298 @@
+@charset "UTF-8";
+p {
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+.none {
+  display: none; }
+
+.price-font {
+  font-family: SimHei, "华文细黑", "STHeiti", Helvetica, "微软雅黑", "Microsoft YaHei", Arial, sans-serif; }
+
+.no-scroll {
+  overflow: hidden; }
+
+.ccb-sale {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Microsoft Yahei", Helvetica, Arial, Verdana, sans-serif; }
+
+.ccb-sale {
+  background-color: #2a6cca; }
+  .ccb-sale .activity-top {
+    width: 100%;
+    height: 510px;
+    background: url(http://hitour.qiniudn.com/a3e4f333ce3a8afa703eaf0f73d1252f.jpg) center center no-repeat;
+    position: relative; }
+    .ccb-sale .activity-top .activity-tab {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      text-align: center; }
+  .ccb-sale .activity-content {
+    margin-top: 40px; }
+    .ccb-sale .activity-content .price-zone {
+      position: absolute;
+      right: 0px;
+      bottom: 30px;
+      color: white;
+      background-color: #2b80ea;
+      z-index: 20;
+      padding: 1px 15px;
+      font-size: 14px; }
+      .ccb-sale .activity-content .price-zone span {
+        vertical-align: bottom; }
+      .ccb-sale .activity-content .price-zone .RMB {
+        font-size: 14px; }
+      .ccb-sale .activity-content .price-zone .new-price {
+        font-size: 24px;
+        line-height: 28px; }
+      .ccb-sale .activity-content .price-zone .old-price {
+        font-size: 14px;
+        text-decoration: line-through; }
+    .ccb-sale .activity-content .flash-sale {
+      border: 1px solid #dddddd;
+      font-size: 0px; }
+      .ccb-sale .activity-content .flash-sale .flash-cover {
+        display: inline-block;
+        width: 680px;
+        height: 555px;
+        position: relative;
+        vertical-align: top; }
+        .ccb-sale .activity-content .flash-sale .flash-cover img {
+          height: 555px; }
+        .ccb-sale .activity-content .flash-sale .flash-cover .summary {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          z-index: 10;
+          opacity: 0;
+          filter: alpha(opacity=0) \0;
+          background-color: rgba(0, 0, 0, 0.5);
+          font-size: 20px; }
+          .ccb-sale .activity-content .flash-sale .flash-cover .summary .summary-table {
+            display: table;
+            height: 100%;
+            margin: auto; }
+            .ccb-sale .activity-content .flash-sale .flash-cover .summary .summary-table .summary-content {
+              width: 550px;
+              font-size: 20px;
+              color: white;
+              display: table-cell;
+              vertical-align: middle; }
+        .ccb-sale .activity-content .flash-sale .flash-cover:hover .summary {
+          opacity: 1;
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000) \0; }
+      .ccb-sale .activity-content .flash-sale .flash-info {
+        display: inline-block;
+        width: 318px;
+        position: relative;
+        vertical-align: top;
+        text-align: center; }
+        .ccb-sale .activity-content .flash-sale .flash-info .timer-zone {
+          color: #2b80ea;
+          background-color: #ffe401;
+          height: 305px; }
+          .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .flash-slogan {
+            border-bottom: 1px solid #2b80ea;
+            margin: 0px auto;
+            display: block;
+            padding: 25px 0px; }
+          .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .flash-time {
+            font-size: 18px;
+            margin: 20px 0px 25px 0px; }
+            .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .flash-time span {
+              vertical-align: middle; }
+              .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .flash-time span i {
+                font-size: 24px; }
+            .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .flash-time .loading {
+              display: inline-block;
+              vertical-align: middle;
+              margin: 15px; }
+            .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .flash-time .time {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 22px; }
+            .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .flash-time .intro {
+              font-size: 28px; }
+          .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .timer {
+            position: relative;
+            font-size: 24px; }
+            .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .timer span {
+              vertical-align: middle;
+              display: inline-block;
+              position: relative; }
+              .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .timer span:after {
+                font-size: 12px;
+                position: absolute;
+                top: 30px; }
+            .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .timer .hours {
+              width: 50px; }
+              .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .timer .hours:after {
+                content: 'Hours';
+                left: 7px; }
+            .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .timer .minutes {
+              width: 50px; }
+              .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .timer .minutes:after {
+                content: 'Minutes';
+                left: 0; }
+            .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .timer .seconds {
+              width: 50px; }
+              .ccb-sale .activity-content .flash-sale .flash-info .timer-zone .timer .seconds:after {
+                content: 'Seconds';
+                left: 0; }
+        .ccb-sale .activity-content .flash-sale .flash-info .product-info {
+          background-color: white;
+          height: 250px; }
+          .ccb-sale .activity-content .flash-sale .flash-info .product-info .product-name {
+            color: black;
+            font-size: 26px;
+            padding: 10px 15px;
+            line-height: 36px;
+            height: 85px;
+            overflow: hidden;
+            text-align: left; }
+          .ccb-sale .activity-content .flash-sale .flash-info .product-info .progress {
+            margin: 10px auto;
+            width: 280px; }
+            .ccb-sale .activity-content .flash-sale .flash-info .product-info .progress .right {
+              font-size: 18px;
+              color: #2b80ea;
+              margin-bottom: 10px;
+              text-align: right; }
+            .ccb-sale .activity-content .flash-sale .flash-info .product-info .progress .progress-bar {
+              border-radius: 3px;
+              width: 280px;
+              margin-bottom: 10px; }
+              .ccb-sale .activity-content .flash-sale .flash-info .product-info .progress .progress-bar .sold-bar {
+                background-color: #aaaaaa;
+                display: inline-block;
+                *zoom: 1;
+                *display: inline;
+                height: 6px;
+                position: relative;
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px; }
+                .ccb-sale .activity-content .flash-sale .flash-info .product-info .progress .progress-bar .sold-bar .sold-appendix {
+                  position: absolute;
+                  right: 0px;
+                  top: 5px;
+                  color: #aaaaaa;
+                  font-size: 18px; }
+              .ccb-sale .activity-content .flash-sale .flash-info .product-info .progress .progress-bar .left-bar {
+                background-color: #2b80ea;
+                display: inline-block;
+                *zoom: 1;
+                *display: inline;
+                height: 6px;
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+                position: relative; }
+                .ccb-sale .activity-content .flash-sale .flash-info .product-info .progress .progress-bar .left-bar .left-appendix {
+                  position: absolute;
+                  right: 0px;
+                  top: 10px;
+                  color: #2b80ea;
+                  font-size: 18px; }
+              .ccb-sale .activity-content .flash-sale .flash-info .product-info .progress .progress-bar .all-radius {
+                border-radius: 3px; }
+          .ccb-sale .activity-content .flash-sale .flash-info .product-info .buy-btn {
+            color: white;
+            text-align: center;
+            width: 290px;
+            background-color: #ff6600;
+            border: 1px solid #adadad;
+            height: 50px;
+            padding: 10px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 45px auto 20px auto;
+            display: block;
+            text-decoration: none; }
+            .ccb-sale .activity-content .flash-sale .flash-info .product-info .buy-btn:hover {
+              text-decoration: none; }
+    .ccb-sale .activity-content .ccb-card {
+      position: relative;
+      width: 1000px;
+      margin: 70px auto; }
+      .ccb-sale .activity-content .ccb-card img {
+        width: 100%; }
+      .ccb-sale .activity-content .ccb-card a {
+        position: absolute;
+        bottom: 40px;
+        color: #ffe401;
+        font-size: 22px;
+        cursor: pointer; }
+        .ccb-sale .activity-content .ccb-card a:hover {
+          color: #ffe401; }
+      .ccb-sale .activity-content .ccb-card .get-cards {
+        right: 380px; }
+      .ccb-sale .activity-content .ccb-card .more-activities {
+        right: 80px; }
+    .ccb-sale .activity-content .discount-sale {
+      padding-top: 20px; }
+      .ccb-sale .activity-content .discount-sale .slogan {
+        margin: 0px auto; }
+      .ccb-sale .activity-content .discount-sale .title {
+        margin: 55px auto 15px auto;
+        font-size: 22px;
+        color: #ffe401; }
+        .ccb-sale .activity-content .discount-sale .title .products-title {
+          float: left; }
+        .ccb-sale .activity-content .discount-sale .title .products-more {
+          float: right;
+          color: #ffe401;
+          text-decoration: none;
+          cursor: pointer;
+          margin-right: 20px; }
+      .ccb-sale .activity-content .discount-sale .double {
+        width: 640px !important; }
+      .ccb-sale .activity-content .discount-sale .each-block {
+        border: 1px solid #ddd;
+        width: 310px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0px 10px 20px 10px; }
+        .ccb-sale .activity-content .discount-sale .each-block .product-cover {
+          position: relative;
+          height: 310px; }
+          .ccb-sale .activity-content .discount-sale .each-block .product-cover img {
+            position: absolute; }
+          .ccb-sale .activity-content .discount-sale .each-block .product-cover .cover-image {
+            left: 0;
+            right: 0;
+            top: 0; }
+          .ccb-sale .activity-content .discount-sale .each-block .product-cover .product-tag {
+            left: 10px;
+            top: -1px; }
+        .ccb-sale .activity-content .discount-sale .each-block .product-info {
+          background-color: white;
+          font-size: 20px;
+          padding: 15px 15px 5px 15px; }
+          .ccb-sale .activity-content .discount-sale .each-block .product-info .product-name {
+            line-height: 24px;
+            height: 48px;
+            overflow: hidden; }
+          .ccb-sale .activity-content .discount-sale .each-block .product-info .product-buy {
+            width: 170px;
+            height: 50px;
+            color: white;
+            display: block;
+            margin: 15px auto;
+            background-color: #ff6600;
+            border: 1px solid #adadad;
+            padding: 10px 0px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer; }
+  .ccb-sale .activity-rule {
+    text-align: center;
+    padding: 80px 0px 120px 0px; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }

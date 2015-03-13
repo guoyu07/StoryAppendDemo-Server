@@ -1,0 +1,1 @@
+<script src="themes/admin/views/admin/stock/javascripts/stockSearchCtrl.js"></script>

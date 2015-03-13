@@ -1,0 +1,1 @@
+<script src="themes/admin/views/admin/invoice/javascripts/invoiceSearchCtrl.js"></script>

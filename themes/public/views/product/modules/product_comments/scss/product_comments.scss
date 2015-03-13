@@ -1,0 +1,126 @@
+.rating-stars {
+    position    : relative;
+    width       : 150px;
+    height      : 30px;
+    line-height : 30px;
+    font-size   : 30px;
+    .stars-front {
+        position : absolute;
+        top      : 0;
+        left     : 0;
+        width    : 90%;
+        color    : #6db381;
+        overflow : hidden;
+    }
+    .stars-back {
+        position : absolute;
+        top      : 0;
+        left     : 0;
+        width    : 100%;
+        color    : #ddd;
+    }
+}
+
+.product-comments {
+    border-top     : 1px solid #ddd;
+    border-bottom  : 1px solid #ddd;
+    padding-bottom : 50px;
+    .comment-score {
+        padding : 50px 0;
+    }
+    .part-title {
+        font-size   : 40px;
+        line-height : 1;
+        text-align  : center;
+    }
+    .score-row {
+        margin-top : 25px;
+        text-align : center;
+    }
+    .rating-stars {
+        display        : inline-block;
+        vertical-align : middle;
+    }
+    .score-text {
+        display        : inline-block;
+        margin-left    : 20px;
+        vertical-align : middle;
+        font-weight    : bold;
+        color          : #666;
+        em {
+            color       : #6db381;
+            font-style  : normal;
+            line-height : 30px;
+            font-size   : 30px;
+        }
+    }
+    .score-count {
+        display        : inline-block;
+        margin-left    : 30px;
+        color          : #666;
+        font-size      : 12px;
+        vertical-align : bottom;
+        span {
+            font-size : 14px;
+        }
+    }
+    .comment-list {
+        padding : 0 100px;
+    }
+    .comment-item {
+        padding    : 25px 10px;
+        border-top : 1px solid #eee;
+    }
+    .user-col {
+        float : left;
+        width : 200px;
+    }
+    .user-score {
+        margin-top : 5px;
+    }
+    .user-stars {
+        width          : 100px;
+        height         : 20px;
+        line-height    : 20px;
+        font-size      : 20px;
+        vertical-align : middle;
+    }
+    .user-score-text {
+        display        : inline-block;
+        line-height    : 20px;
+        margin-left    : 10px;
+        vertical-align : middle;
+        span {
+            font-size : 16px;
+        }
+    }
+    .comment-col {
+        float : left;
+        width : 600px;
+    }
+    .comment-text {
+        color       : #666;
+        font-size   : 14px;
+        line-height : 1.6;
+    }
+    .comment-page-number {
+        text-align : center;
+        margin-top : 20px;
+        color      : #6db381;
+        i {
+            display     : inline-block;
+            height      : 26px;
+            line-height : 26px;
+            padding     : 0 8px;
+            font-style  : normal;
+            &:hover {
+                cursor           : pointer;
+                background-color : #eee;
+            }
+            &.active {
+                background-color : #6db381;
+                color            : #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+2015/03/07 08:09:20 [info] [mail.sended(1)] Info: Send email success! Subject[biu] To[wangbo@hitour.cc]
+in /private/var/www/hitour.server/hitour/protected/service/Mail.php (262)
+in /private/var/www/hitour.server/hitour/protected/service/Mail.php (304)
+in /private/var/www/hitour.server/hitour/protected/service/Mail.php (337)
+2015/03/07 08:12:49 [info] [mail.sended(1)] Info: Send email success! Subject[添加了新的Q&A] To[wangbo@hitour.cc]
+in /private/var/www/hitour.server/hitour/protected/service/Mail.php (262)
+in /private/var/www/hitour.server/hitour/protected/service/Mail.php (304)
+in /private/var/www/hitour.server/hitour/protected/service/Mail.php (337)
+2015/03/07 08:13:47 [info] [mail.sended(1)] Info: Send email success! Subject[添加了新的Q&A] To[wangbo@hitour.cc]
+in /private/var/www/hitour.server/hitour/protected/service/Mail.php (262)
+in /private/var/www/hitour.server/hitour/protected/service/Mail.php (304)
+in /private/var/www/hitour.server/hitour/protected/service/Mail.php (337)
+2015/03/07 08:14:56 [info] [mail.sended(1)] Info: Send email success! Subject[添加了新的Q&A] To[wangbo@hitour.cc]
+in /private/var/www/hitour.server/hitour/protected/service/Mail.php (262)
+in /private/var/www/hitour.server/hitour/protected/service/Mail.php (304)
+in /private/var/www/hitour.server/hitour/protected/service/Mail.php (337)
+2015/03/07 08:18:46 [info] [mail.sended(1)] Info: Send email success! Subject[wenzi在商品3810下添加了新的Q&A] To[wangbo@hitour.cc]
+in /private/var/www/hitour.server/hitour/protected/service/Mail.php (262)
+in /private/var/www/hitour.server/hitour/protected/service/Mail.php (304)
+in /private/var/www/hitour.server/hitour/protected/service/Mail.php (337)

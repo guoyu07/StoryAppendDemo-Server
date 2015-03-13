@@ -1,0 +1,25 @@
+.hi-nav {
+	position: relative;
+}
+.hi-nav .nav-item {
+	display: inline-block;
+	/*border-left: 1px solid #eee;*/
+  /*border-right: 1px solid #eee;*/
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.hi-nav .nav-item.active {
+
+}
+.hi-nav .nav-item:hover {
+	/*background-color: #f7f7f7;*/
+}
+
+.hi-tab-content .content-item {
+	/*width: 1000px;*/
+	/*min-height: 500px;*/
+}
+.hi-tab-content .content-item:nth-child(odd) {
+	/*background-color: #f7f7f7;*/
+}

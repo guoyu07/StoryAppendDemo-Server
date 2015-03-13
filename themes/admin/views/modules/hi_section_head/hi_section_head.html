@@ -1,0 +1,11 @@
+<div class="section-head">
+	<h2 class="section-title" ng-bind-html="options.title"></h2>
+	<div class="section-actions">
+		<button class="block-action btn btn-inverse" ng-show="options.is_edit" ng-click="options.updateCb( model )">
+			保存
+		</button>
+		<button class="block-action btn btn-inverse" ng-hide="options.is_edit" ng-click="options.editCb( model )">
+			编辑
+		</button>
+	</div>
+</div>

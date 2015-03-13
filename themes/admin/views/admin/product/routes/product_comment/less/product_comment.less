@@ -1,0 +1,86 @@
+.product-comment {
+    .comment-body {
+        padding-top : 20px;
+    }
+    .comment-btn {
+        background-color : #34495e;
+        margin-bottom    : 20px;
+        line-height      : 32px;
+        font-weight      : bold;
+        font-size        : 20px;
+        color            : #fff;
+        &:hover {
+            color : #6db381;
+        }
+    }
+    .comment-ctn {
+        border        : 1px solid @gray-light;
+        position      : relative;
+        min-height    : 100px;
+        margin-bottom : @grid-height;
+    }
+    .block-ctn {
+        margin   : 30px 20px;
+        overflow : hidden;
+        position : relative;
+    }
+    .height-control {
+        min-height : 80px;
+    }
+    .delete-block {
+        top        : -1px;
+        right      : -1px;
+        width      : @grid-height + 2;
+        height     : @grid-height + 2;
+        position   : absolute;
+        background : @gray-light;
+        .i {
+            top         : 0;
+            right       : 0;
+            color       : @white;
+            width       : @grid-height;
+            height      : @grid-height;
+            cursor      : pointer;
+            z-index     : 10;
+            position    : absolute;
+            font-size   : @body-font-large;
+            text-align  : center;
+            background  : @brand-primary;
+            line-height : @grid-height;
+        }
+        &:before {
+            top        : 0;
+            right      : 0;
+            width      : @grid-height + 1;
+            height     : @grid-height + 1;
+            content    : "";
+            z-index    : 9;
+            position   : absolute;
+            background : @white;
+        }
+    }
+    .edit-btn {
+        position         : absolute;
+        right            : 0;
+        bottom           : 0;
+        border-width     : 0;
+        background-color : #fff;
+        outline          : none;
+        &.i-edit {
+            color : @brand-secondary;
+        }
+    }
+    &.selected {
+        color      : @white;
+        background : @brand-secondary;
+    }
+    .save-btn {
+        padding : 5px;
+        text-align: center;
+    }
+    .hiselecttag {
+        .chosen-container {
+            width : 250px;
+        }
+    }
+}

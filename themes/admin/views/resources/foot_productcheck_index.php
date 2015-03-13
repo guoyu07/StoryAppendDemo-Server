@@ -1,0 +1,1 @@
+<script src="themes/admin/views/admin/productCheck/javascripts/productCheck.js"></script>

@@ -1,0 +1,123 @@
+$rootpath: "../";
+$white: #fff;
+$lite-grey: #f7f7f7;
+$bg-grey: #f6f6f6;
+$icon-grey: #7f7f7f;
+$big-title-grey: #525252;
+$medium-title-grey: #737373;
+$small-title-grey: #808080;
+$footer-grey: #b4c1b9;
+$theme-green: #81ba27;
+$input-grey: #999;
+$orange: #f60;
+$black: #000;
+$deep-green:#6db381;
+$light-green:#81BA27;
+$green-border:#0e8e38;
+$link-blue:#0088ff;
+$h1-font: 34px;
+$h2-font: 22px;
+$h3-font: 18px;
+$h4-font: 16px;
+$h5-font: 14px;
+$h1-line: 40px;
+$h2-line: 24px;
+$h3-line: 26px;
+$h4-line: 24px;
+$h5-line: 20px;
+$h1-offset: ( $h1-line - $h1-font ) / 2;
+$h2-offset: ( $h2-line - $h2-font ) / 2;
+$h3-offset: ( $h3-line - $h3-font ) / 2;
+$h4-offset: ( $h4-line - $h4-font ) / 2;
+$h5-offset: ( $h5-line - $h5-font ) / 2;
+
+$grid-width: 18px;
+$grid-height: 20px;
+
+p {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.none {
+  display: none;
+}
+
+.price-font {
+  font-family: SimHei, "华文细黑", "STHeiti", Helvetica, "微软雅黑", "Microsoft YaHei", Arial, sans-serif;;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@mixin h1 {
+  color: $big-title-grey;
+  font-size: $h1-font;
+  line-height: $h1-line;
+}
+
+@mixin h2 {
+  color: $big-title-grey;
+  font-size: $h2-font;
+  line-height: $h2-line;
+}
+
+@mixin h3 {
+  color: $medium-title-grey;
+  font-size: $h3-font;
+  line-height: $h3-line;
+}
+
+@mixin h4 {
+  color: $small-title-grey;
+  font-size: $h4-font;
+  line-height: $h4-line;
+}
+
+@mixin h5 {
+  color: $medium-title-grey;
+  font-size: $h5-font;
+  line-height: $h5-line;
+}
+
+@mixin inline-block($va: top) {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: $va;
+}
+
+@mixin genPrefix($prop, $value) {
+  @each $prefix in '','-moz-', '-webkit-', '-ms-', '-o-' {
+    #{$prefix}#{$prop}: $value;
+  }
+}
+
+@mixin genFont($name) {
+
+  @font-face {
+    font-family: quote($name);
+    src: url($rootpath + 'fonts/' + quote($name) + ".eot");
+    src:
+      url($rootpath + 'fonts/' + quote($name) + ".eot#iefix") format("embedded-opentype"),
+      url($rootpath + 'fonts/' + quote($name) + ".woff") format("woff"),
+      url($rootpath + 'fonts/' + quote($name) + ".ttf") format("truetype"),
+      url($rootpath + 'fonts/' + quote($name) + ".svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@mixin bg-rgba($r,$g,$b,$a){
+  $color:rgba($r,$g,$b,$a);
+  background-color: $color;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($color)}',endColorstr='#{ie-hex-str($color)}');
+}
+
+
+
+

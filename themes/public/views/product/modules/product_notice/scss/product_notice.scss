@@ -1,0 +1,102 @@
+.product-service-include, .product-please-read, .product-redeem-usage {
+    border-top: 1px solid #ddd;
+    padding: 50px 0;
+    .border-top {
+        border-top: 1px solid #ddd;
+    }
+    .part-title {
+        font-size: 40px;
+        line-height: 1;
+        text-align: center;
+    }
+    .services, .notes, .tips, .redeem, .usage {
+        padding: 50px 0;
+    }
+    .title-col {
+        float: left;
+        width: 250px;
+        padding-left: 50px;
+    }
+    .title-text {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .content-col {
+        float: left;
+        width: 750px;
+    }
+    .service-include-md {
+        ol, ul {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            display: list-item;
+            width: 700px;
+            list-style: disc inside;
+            word-break: break-word;
+            margin-bottom: 8px;
+        }
+    }
+    .markdown-text {
+        div {
+            display: table;
+            border: 1px solid #ddd;
+            margin-top: -1px;
+        }
+        h1, h2, h3, h4 {
+            display: table-cell;
+            vertical-align: middle;
+            width: 100px;
+            font-size: 14px;
+            line-height: 1;
+            padding: 8px;
+            background: #eee;
+            text-align: center;
+        }
+        ol, ul {
+            float: left;
+            width: 600px;
+            margin: 0;
+            padding: 8px 15px;
+            font-size: 14px;
+            border-left: 1px solid #ddd;
+            list-style-position: inside;
+            li {
+                padding: 4px 0;
+            }
+        }
+        p {
+            display: list-item;
+            width: 700px;
+            list-style: disc inside;
+            word-break: break-word;
+            margin-bottom: -10px;
+            padding-top: 15px;
+        }
+    }
+    .redeem-map {
+        padding-top: 50px;
+        #redeem_map {
+            width: 1000px;
+            height: 250px;
+        }
+    }
+    .location-icon {
+        background-image: url("../../../../../lib/GoogleMap/map_ico.png");
+        display: inline-block;
+        margin-top: -5px;
+        width: 27px;
+        height: 32px;
+        line-height: 1;
+        vertical-align: middle;
+    }
+    .location-group-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 12px 0 8px;
+        &.first {
+            margin-top: 0;
+        }
+    }
+}

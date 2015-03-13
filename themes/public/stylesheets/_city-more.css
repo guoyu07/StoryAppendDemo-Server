@@ -1,0 +1,47 @@
+.city-more {
+  padding: 20px 0; }
+  .city-more .other-cities, .city-more .rec-cities {
+    padding: 15px 10px; }
+    .city-more .other-cities .left-title, .city-more .rec-cities .left-title {
+      font-size: 16px;
+      float: left;
+      width: 160px;
+      height: 36px;
+      line-height: 36px;
+      color: #6faf7c; }
+    .city-more .other-cities .right-content, .city-more .rec-cities .right-content {
+      margin: 0;
+      padding: 0;
+      float: left;
+      list-style: none; }
+      .city-more .other-cities .right-content .city-item, .city-more .rec-cities .right-content .city-item {
+        color: #888;
+        height: 36px;
+        line-height: 36px;
+        float: left;
+        margin-right: 20px;
+        transition: all 0.1s; }
+        .city-more .other-cities .right-content .city-item a, .city-more .rec-cities .right-content .city-item a {
+          color: #888; }
+        .city-more .other-cities .right-content .city-item:hover, .city-more .rec-cities .right-content .city-item:hover {
+          margin-top: -2px; }
+          .city-more .other-cities .right-content .city-item:hover a, .city-more .rec-cities .right-content .city-item:hover a {
+            color: #aaa; }
+      .city-more .other-cities .right-content .group-item, .city-more .rec-cities .right-content .group-item {
+        height: 36px;
+        line-height: 36px;
+        overflow: hidden; }
+        .city-more .other-cities .right-content .group-item .left-group-title, .city-more .rec-cities .right-content .group-item .left-group-title {
+          float: left;
+          margin-right: 40px; }
+          .city-more .other-cities .right-content .group-item .left-group-title:after, .city-more .rec-cities .right-content .group-item .left-group-title:after {
+            content: '\e60e';
+            font-family: hitour;
+            font-size: 12px;
+            margin-left: 3px;
+            color: #bbb; }
+        .city-more .other-cities .right-content .group-item .right-group-contnt, .city-more .rec-cities .right-content .group-item .right-group-contnt {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          float: left; }

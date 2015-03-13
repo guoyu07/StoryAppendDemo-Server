@@ -1,0 +1,19 @@
+<div class="tags-container">
+	<div class="input-row row">
+		<div class="col-md-9">
+			<input type="text" class="form-control" placeholder="{{ local.placeholder }}" ng-model="local.input_tag" />
+			<button class="btn btn-inverse block-action add" ng-click="addTag()" ng-disabled="!local.input_tag">
+				<span ng-bind="local.btn_text"></span>
+				<span class="i i-refresh refresh-animate" ng-show="local.in_progress"></span>
+			</button>
+		</div>
+		<div class="col-md-9">
+			<span class="process-msg" ng-class="{ 'error' : local.is_error }" ng-show="local.message"
+			      ng-bind="local.message"></span>
+		</div>
+	</div>
+	<div class="one-block">
+		<div class="one-tag selected" ng-repeat="tag in model" ng-bind="tag[ options.title_str ]"
+		     ng-click="delTag( $index )"></div>
+	</div>
+</div>

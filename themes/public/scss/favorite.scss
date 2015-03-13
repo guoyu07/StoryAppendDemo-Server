@@ -1,0 +1,165 @@
+.favorite-container {
+  background-color: #f7f7f7;
+  color: #525252;
+}
+.fav-notification {
+  text-align: center;
+  padding-top: 170px;
+  height: 400px;
+  .title {
+    margin-bottom: 10px;
+    color: #525252;
+    font-size: 22px;
+    i {
+      font-size: 30px;
+      color: #f94b4b;
+      margin-right: 15px;
+    }
+  }
+  .desc {
+    text-align: left;
+    margin: 0px auto;
+    color: #a5a5a5;
+    font-size: 16px;
+    line-height: 20px;
+    width: 360px;
+  }
+
+}
+.tab-nav {
+  margin: 30px;
+  ul {
+    padding: 0px;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      cursor: pointer;
+      padding: 5px 25px;
+      font-size: 14px;
+    }
+    li.active {
+      color: white;
+      background-color: #6db381;
+    }
+  }
+}
+.tab-content {
+  margin: 30px;
+  .expired-collection,
+  .one-collection {
+    .one-delete {
+      display: none;
+      position: absolute;
+      right: -10px;
+      top: -10px;
+      font-size: 26px;
+      color: black;
+      z-index: 20;
+      padding:2px;
+    }
+    &:hover {
+      .one-delete {
+        display: block;
+      }
+    }
+  }
+  .expired-collection {
+    height: 55px;
+    position: relative;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    padding-top: 15px;
+    .expired-notice {
+      color: #e32c1e;
+      margin-left: 35px;
+      i {
+        font-size: 14px;
+        margin-right: 5px;
+      }
+    }
+    .expired-name {
+      float: right;
+      margin-right: 212px;
+      &:after {
+        clear: both;
+      }
+    }
+  }
+  .one-collection {
+    position: relative;
+    border: 1px solid #ddd;
+    background-color: white;
+    margin: 20px 0px;
+    height: 225px;
+    .left-part {
+      display: inline-block;
+      width: 49%;
+      img {
+        width: 100%;
+        height: 223px;
+        margin-bottom: 1px;
+      }
+    }
+    .right-part {
+      display: inline-block;
+      vertical-align: middle;
+      height: 225px;
+      width: 49%;
+      padding: 35px;
+      .one-title {
+        font-size: 26px;
+        line-height: 34px;
+        height: 70px;
+        overflow: hidden;
+        a {
+          color: #525252;
+          &:hover {
+            color: #525252;
+            text-decoration: none;
+          }
+        }
+      }
+      .one-benefit {
+        font-size: 14px;
+        margin: 10px 0px;
+        color: #727272;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        min-height: 20px;
+        i {
+          font-size: 12px;
+          color: #6db381;
+        }
+        .icon-tag2:before {
+          content: "\e653";
+        }
+      }
+      .price-zone {
+        position: relative;
+        .RMB {
+          font-size: 16px;
+        }
+        .price {
+          font-family: Lucida Gde;
+          letter-spacing: 2px;
+          font-size: 26px;
+        }
+        .appendix {
+          font-size: 12px;
+        }
+        .one-more {
+          position: absolute;
+          bottom: 3px;
+          right: 0px;
+          color: #ff6600;
+          text-decoration: none;
+          &:hover {
+            color: #ff6600;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

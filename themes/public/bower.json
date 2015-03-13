@@ -1,0 +1,24 @@
+{
+  "name": "public",
+  "version": "0.0.0",
+  "authors": [
+    "Angela <idu.angela@gmail.com>"
+  ],
+  "description": "Hitour Public Site",
+  "keywords": [
+    "hitour"
+  ],
+  "license": "MIT",
+  "homepage": "http://hitour.cc",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.9.1"
+  }
+}

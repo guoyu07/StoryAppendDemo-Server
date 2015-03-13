@@ -1,0 +1,157 @@
+//.one-plan-ctn {}
+
+.one-plan-group {
+    position      : relative;
+    border        : 1px solid #eee;
+    margin-bottom : 50px;
+    width: 835px;
+}
+
+.group-del-btn {
+    position    : absolute;
+    top         : -1px;
+    right       : -34px;
+    color       : #fff;
+    width       : 34px;
+    height      : 34px;
+    cursor      : pointer;
+    background  : @brand-primary;
+    line-height : 32px;
+}
+
+.group-head {
+    background  : @bg-lite;
+    height      : 60px;
+    line-height : 60px;
+    margin-bottom: 10px;
+    input {
+        margin-top : 16px;
+    }
+    .toggle-edit {
+        margin-top : 21px;
+    }
+}
+
+.group-body {
+    padding: 5px;
+}
+
+.group-content {
+    position      : relative;
+    margin-bottom : 40px;
+    background    : @bg-lite;
+    border: 1px solid #eee;
+    .dragndrop();
+}
+
+.item-img-ctn {
+    height   : 145px;
+    position : relative;
+}
+
+.img-order {
+    top         : 0px;
+    left        : 0px;
+    width       : 100%;
+    color       : #fff;
+    opacity     : 0.3;
+    position    : absolute;
+    font-size   : 80px;
+    text-align  : center;
+    font-family : 'Arial Black';
+    text-shadow : 5px 5px 6px #000;
+}
+
+.triangle {
+    left         : 25px;
+    width        : 0px;
+    height       : 0px;
+    bottom       : 0px;
+    position     : absolute;
+    border-style : solid;
+    border-width : 0 8px 10px 8px;
+    border-color : transparent transparent #f5f6f7 transparent;
+}
+
+.img-option-ctn {
+    position   : absolute;
+    top        : 0px;
+    right      : 0;
+    color      : #fff;
+    width      : 58px;
+    height     : 145px;
+    background : rgba(0, 0, 0, 0.5);
+    left       : auto;
+    display    : block;
+}
+
+.overlay-btn {
+    width       : 58px;
+    height      : 72px;
+    font-size   : 30px;
+    line-height : 72px;
+    text-align  : center;
+}
+
+.item-info-ctn {
+    padding    : 10px 30px 10px 10px;
+    min-height : 140px;
+}
+
+.item-toggle-edit {
+    position : absolute;
+    bottom   : 20px;
+    right    : 5px;
+    display  : none;
+}
+
+.item-del-btn {
+    position      : absolute;
+    right         : -15px;
+    top           : -15px;
+    height        : 30px;
+    width         : 30px;
+    line-height   : 22px;
+    font-weight   : bold;
+    border        : 4px solid #fff;
+    border-radius : 50%;
+    background    : @brand-primary-lite;
+    color         : #fff;
+    text-align    : center;
+    display       : none;
+}
+
+.plus-inverse {
+    color       : #fff;
+    padding     : 5px;
+    margin-left : 5px;
+    background  : @brand-primary-lite;
+    position    : absolute;
+}
+
+.padding-fix {
+    padding-bottom : 10px;
+}
+
+.group-content:hover {
+    .item-del-btn, .item-toggle-edit {
+        display : block;
+        cursor  : pointer;
+    }
+    .overlay-btn {
+        cursor: pointer;
+    }
+}
+
+.tour_plan_uploader {
+    display: none;
+}
+
+.overlay.progress-screen {
+    .progress {
+        top: 50%;
+        left: 30%;
+        width: 40%;
+        position: fixed;
+    }
+}

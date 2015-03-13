@@ -1,0 +1,153 @@
+.top-ctn {
+  background: url(../images/account/fundheader.png) center center;
+  height: 380px; }
+
+.rule-ctn .rule-desc {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
+  color: #666; }
+.rule-ctn .rule-item-ctn {
+  width: 1000px;
+  margin: 0 auto; }
+  .rule-ctn .rule-item-ctn .rule-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    padding-left: 145px;
+    position: relative;
+    margin-bottom: 40px; }
+    .rule-ctn .rule-item-ctn .rule-item:before {
+      position: absolute;
+      left: 65px;
+      font-size: 68px; }
+    .rule-ctn .rule-item-ctn .rule-item h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #666; }
+    .rule-ctn .rule-item-ctn .rule-item p {
+      font-size: 14px;
+      line-height: 19px; }
+  .rule-ctn .rule-item-ctn .icon-gift-circle-bg:before {
+    color: #62B9CC; }
+  .rule-ctn .rule-item-ctn .icon-share-circle-bg:before {
+    color: #6DB381; }
+  .rule-ctn .rule-item-ctn .icon-rmb-circle-bg:before {
+    color: #DE8383; }
+
+.fund-content {
+  font-size: 0;
+  background: #efefef;
+  padding-bottom: 100px; }
+  .fund-content .fund-status {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 48px 0 95px 0; }
+    .fund-content .fund-status .status-wrap {
+      width: 50%;
+      font-size: 12px;
+      display: inline-block;
+      vertical-align: top;
+      padding: 15px 0; }
+      .fund-content .fund-status .status-wrap a {
+        color: #999;
+        margin-left: 10px;
+        font-size: 14px; }
+        .fund-content .fund-status .status-wrap a:hover {
+          text-decoration: none; }
+      .fund-content .fund-status .status-wrap p {
+        font-size: 20px;
+        color: #666; }
+      .fund-content .fund-status .status-wrap em {
+        font-family: "Arial Black";
+        font-size: 60px;
+        font-style: normal;
+        color: #999; }
+      .fund-content .fund-status .status-wrap i {
+        font-style: normal;
+        font-size: 20px;
+        position: relative;
+        top: -2px;
+        color: #666; }
+    .fund-content .fund-status .left-wrap {
+      padding-left: 245px;
+      border-right: 1px solid #a7a7a7; }
+    .fund-content .fund-status .right-wrap {
+      padding-left: 60px; }
+      .fund-content .fund-status .right-wrap em {
+        color: #ee7171; }
+      .fund-content .fund-status .right-wrap i {
+        color: #ee7171; }
+
+.fund-coupon-list {
+  font-size: 14px;
+  width: 1000px;
+  margin: 0 auto; }
+  .fund-coupon-list table {
+    width: 100%; }
+  .fund-coupon-list th {
+    font-size: 18px;
+    color: #666;
+    font-weight: bold;
+    padding: 24px 0; }
+    .fund-coupon-list th.m-th {
+      text-align: left;
+      padding-left: 90px;
+      width: 605px; }
+  .fund-coupon-list .share-btn {
+    padding: 6px 10px;
+    background: #6DB381;
+    color: #FFF;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-left: 20px;
+    display: none; }
+  .fund-coupon-list .detail {
+    display: none; }
+  .fund-coupon-list tbody tr {
+    border-top: 1px solid #a7a7a7;
+    height: 90px; }
+    .fund-coupon-list tbody tr a {
+      font-size: 12px;
+      color: #666; }
+      .fund-coupon-list tbody tr a:hover {
+        text-decoration: none; }
+    .fund-coupon-list tbody tr strong {
+      color: #6db381; }
+  .fund-coupon-list .fund-td {
+    color: #ec7a48;
+    font-size: 18px;
+    text-align: center; }
+    .fund-coupon-list .fund-td em {
+      font-size: 28px;
+      font-family: "Arial Black";
+      font-style: normal; }
+    .fund-coupon-list .fund-td.empty {
+      color: #999; }
+  .fund-coupon-list .coupon-ticket {
+    background: url(../images/account/ticket.png);
+    width: 65px;
+    height: 38px;
+    color: #6DB381;
+    font-size: 18px;
+    text-align: center;
+    line-height: 38px;
+    margin: 0 auto; }
+
+.icon-smile-circle-bg:before {
+  font-size: 24px;
+  color: #6DB381;
+  position: relative;
+  line-height: 12px;
+  top: 4px;
+  margin-right: 14px; }
+
+.icon-cry-circle-bg:before {
+  font-size: 24px;
+  color: #EC7A48;
+  position: relative;
+  line-height: 12px;
+  top: 4px;
+  margin-right: 14px; }

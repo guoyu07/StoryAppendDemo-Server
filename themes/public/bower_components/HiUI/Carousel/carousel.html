@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HiUI.Carousel</title>
+    <link href="carousel.css" type="text/css" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="hi-carousel" id="my_carousel">
+        <div class="carousel-list">
+            <div class="carousel-item active" style="background-image: url('demo_images/1.jpg')"></div>
+            <div class="carousel-item" style="background-image: url('demo_images/2.jpg')"></div>
+            <div class="carousel-item" style="background-image: url('demo_images/3.jpg')"></div>
+            <div class="carousel-item" style="background-image: url('demo_images/4.jpg')"></div>
+        </div>
+        <div class="to to-prev"><</div>
+        <div class="to to-next">></div>
+        <div class="index-list">
+            <i class="to to-index active"></i>
+            <i class="to to-index"></i>
+            <i class="to to-index"></i>
+            <i class="to to-index"></i>
+        </div>
+    </div>
+
+
+    <script src="../jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="carousel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        // init
+        new HiCarousel({
+            dom: '#my_carousel',
+            type: 'fade',
+            time: 400
+        });
+    </script>
+</body>
+
+</html>

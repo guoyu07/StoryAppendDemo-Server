@@ -1,0 +1,496 @@
+.guide-2345 {
+  background-color: #f2f2f2;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Microsoft Yahei", Helvetica, Arial, Verdana, sans-serif; }
+  .guide-2345 .guide-container {
+    width: 990px;
+    margin: 0px auto;
+    background-color: white;
+    padding-top: 15px; }
+  .guide-2345 .navigation {
+    font-size: 0px;
+    width: 960px;
+    border: 1px solid #ddd;
+    position: relative;
+    margin: 0 auto; }
+    .guide-2345 .navigation .country-list {
+      width: 210px;
+      z-index: 22;
+      position: relative;
+      height: 503px; }
+      .guide-2345 .navigation .country-list .border-top {
+        border-top: 1px solid #ddd; }
+      .guide-2345 .navigation .country-list .active {
+        border-right: 0px !important; }
+      .guide-2345 .navigation .country-list .each-continent {
+        padding: 20px;
+        border-right: 1px solid #ddd; }
+        .guide-2345 .navigation .country-list .each-continent .continent-name {
+          font-size: 16px;
+          font-weight: bold;
+          color: #057ebc; }
+        .guide-2345 .navigation .country-list .each-continent .continent-countries ul {
+          list-style-type: none;
+          padding: 0px;
+          margin-top: 10px; }
+          .guide-2345 .navigation .country-list .each-continent .continent-countries ul li {
+            font-size: 12px;
+            line-height: 20px;
+            height: 20px;
+            font-weight: bold;
+            color: #333333;
+            width: 80px;
+            display: inline-block;
+            overflow: hidden; }
+            .guide-2345 .navigation .country-list .each-continent .continent-countries ul li a {
+              text-decoration: none;
+              color: #333333; }
+    .guide-2345 .navigation .city-list {
+      width: 748px;
+      height: 503px;
+      position: absolute;
+      left: 210px;
+      top: 0px;
+      z-index: 21;
+      padding: 20px 70px;
+      background-color: white;
+      display: none; }
+      .guide-2345 .navigation .city-list .each-country {
+        width: 250px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px; }
+        .guide-2345 .navigation .city-list .each-country .country-name {
+          font-size: 16px;
+          font-weight: bold;
+          color: #333333; }
+          .guide-2345 .navigation .city-list .each-country .country-name a {
+            color: #333333; }
+        .guide-2345 .navigation .city-list .each-country .country-cities {
+          display: inline-block;
+          vertical-align: top; }
+          .guide-2345 .navigation .city-list .each-country .country-cities ul {
+            list-style-type: none;
+            padding: 0px; }
+            .guide-2345 .navigation .city-list .each-country .country-cities ul li {
+              font-size: 14px;
+              line-height: 20px;
+              height: 20px;
+              color: #525252;
+              display: inline-block;
+              margin-right: 10px;
+              margin-top: 5px; }
+              .guide-2345 .navigation .city-list .each-country .country-cities ul li a {
+                color: #525252;
+                text-decoration: none; }
+                .guide-2345 .navigation .city-list .each-country .country-cities ul li a:hover {
+                  color: #057ebc; }
+    .guide-2345 .navigation .nav-carousel {
+      width: 748px;
+      z-index: 10;
+      position: absolute;
+      top: 0px;
+      left: 210px; }
+      .guide-2345 .navigation .nav-carousel .hi-carousel .carousel-list {
+        height: 503px;
+        position: relative; }
+        .guide-2345 .navigation .nav-carousel .hi-carousel .carousel-list .carousel-item {
+          display: none;
+          height: 503px;
+          width: 748px;
+          position: absolute;
+          top: 0px;
+          bottom: 0px;
+          left: 0px;
+          right: 0px; }
+          .guide-2345 .navigation .nav-carousel .hi-carousel .carousel-list .carousel-item img {
+            width: 100%;
+            height: 503px; }
+  .guide-2345 .hot-sight {
+    width: 960px;
+    padding: 20px 0px;
+    margin: 0 auto; }
+    .guide-2345 .hot-sight .title {
+      margin-bottom: 15px; }
+      .guide-2345 .hot-sight .title h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #057ebc; }
+      .guide-2345 .hot-sight .title p {
+        font-size: 14px;
+        color: #525252; }
+    .guide-2345 .hot-sight .dest-content {
+      position: relative;
+      height: 440px; }
+      .guide-2345 .hot-sight .dest-content .dest-block {
+        position: absolute; }
+        .guide-2345 .hot-sight .dest-content .dest-block a {
+          position: relative;
+          display: block; }
+          .guide-2345 .hot-sight .dest-content .dest-block a img {
+            width: 100%; }
+          .guide-2345 .hot-sight .dest-content .dest-block a p {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 20px;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75); }
+  .guide-2345 .hot-product {
+    width: 960px;
+    margin: 0 auto; }
+    .guide-2345 .hot-product .title {
+      margin-bottom: 20px; }
+      .guide-2345 .hot-product .title h2 {
+        font-size: 24px;
+        color: #057ebc; }
+    .guide-2345 .hot-product .tab {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #adadad; }
+      .guide-2345 .hot-product .tab ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px; }
+        .guide-2345 .hot-product .tab ul li {
+          font-size: 20px;
+          line-height: 22px;
+          height: 22px;
+          width: 121px;
+          color: #525252;
+          display: inline-block;
+          cursor: pointer;
+          text-align: center;
+          position: relative;
+          -webkit-transition: 0.6s;
+          -moz-transition: 0.6s;
+          -ms-transition: 0.6s;
+          -o-transition: 0.6s;
+          transition: 0.6s; }
+          .guide-2345 .hot-product .tab ul li:hover {
+            color: #999999; }
+        .guide-2345 .hot-product .tab ul .divider {
+          border-left: 1px solid #525252; }
+        .guide-2345 .hot-product .tab ul .active {
+          color: #057ebc; }
+          .guide-2345 .hot-product .tab ul .active:after {
+            content: '';
+            position: absolute;
+            width: 121px;
+            top: 33px;
+            left: 0px;
+            height: 2px;
+            background-color: #057ebc; }
+    .guide-2345 .hot-product .products-content {
+      display: none; }
+      .guide-2345 .hot-product .products-content .product-block .product-wrap {
+        position: relative;
+        background-color: #fff;
+        padding: 15px 160px 15px 0px;
+        border-bottom: 1px solid #ddd; }
+      .guide-2345 .hot-product .products-content .product-block .product-name-block {
+        width: 400px;
+        position: absolute;
+        left: 195px;
+        padding: 0 20px;
+        text-align: left;
+        color: #444; }
+      .guide-2345 .hot-product .products-content .product-block .product-name-cnname {
+        font-size: 18px;
+        line-height: 1.2; }
+        .guide-2345 .hot-product .products-content .product-block .product-name-cnname a {
+          color: #444;
+          text-decoration: none; }
+      .guide-2345 .hot-product .products-content .product-block .product-img-block {
+        float: left;
+        width: 180px;
+        height: 130px;
+        position: relative;
+        overflow: hidden; }
+      .guide-2345 .hot-product .products-content .product-block .product-service-block {
+        margin-top: 30px;
+        float: left;
+        width: 400px;
+        padding: 12px 20px 0 35px; }
+        .guide-2345 .hot-product .products-content .product-block .product-service-block h2 {
+          font-size: 14px;
+          color: #aaa; }
+        .guide-2345 .hot-product .products-content .product-block .product-service-block ol {
+          margin: 0;
+          padding: 3px 0 0 5px;
+          list-style: disc inside;
+          line-height: 1.4;
+          height: 4.2em;
+          overflow: hidden;
+          color: #666; }
+        .guide-2345 .hot-product .products-content .product-block .product-service-block p {
+          color: #666; }
+      .guide-2345 .hot-product .products-content .product-block .product-price {
+        position: absolute;
+        top: 50px;
+        right: 140px;
+        width: 140px;
+        padding-left: 20px;
+        border-left: 1px solid #eee;
+        text-align: center;
+        font-size: 12px; }
+        .guide-2345 .hot-product .products-content .product-block .product-price .hi-price {
+          color: #f60; }
+          .guide-2345 .hot-product .products-content .product-block .product-price .hi-price em {
+            font-size: 28px;
+            font-style: normal; }
+        .guide-2345 .hot-product .products-content .product-block .product-price .orig-price {
+          color: #888; }
+          .guide-2345 .hot-product .products-content .product-block .product-price .orig-price em {
+            font-size: 14px;
+            text-decoration: line-through; }
+        .guide-2345 .hot-product .products-content .product-block .product-price .sales-block {
+          color: #888;
+          font-size: 12px;
+          padding-top: 5px; }
+        .guide-2345 .hot-product .products-content .product-block .product-price .sales_volume {
+          color: #f60; }
+      .guide-2345 .hot-product .products-content .product-block .product-links {
+        position: absolute;
+        right: 30px;
+        top: 65px;
+        font-size: 14px; }
+        .guide-2345 .hot-product .products-content .product-block .product-links a {
+          text-decoration: none;
+          display: block; }
+        .guide-2345 .hot-product .products-content .product-block .product-links .detail-link {
+          color: #ff6600; }
+        .guide-2345 .hot-product .products-content .product-block .product-links .type-link {
+          color: #057ebc;
+          margin-top: 10px; }
+    .guide-2345 .hot-product .group-active {
+      display: block; }
+  .guide-2345 .hot-lanes {
+    width: 960px;
+    margin: 0px auto; }
+    .guide-2345 .hot-lanes .title {
+      margin-bottom: 20px; }
+      .guide-2345 .hot-lanes .title h2 {
+        font-size: 24px;
+        line-height: 24px;
+        color: #057ebc;
+        margin-top: 30px;
+        display: inline-block;
+        vertical-align: bottom; }
+      .guide-2345 .hot-lanes .title span {
+        font-size: 14px;
+        line-height: 14px;
+        color: #525252;
+        margin-left: 10px;
+        vertical-align: bottom; }
+    .guide-2345 .hot-lanes .lane-content .line-item {
+      height: 150px;
+      width: 470px;
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      display: inline-block;
+      border-radius: 3px; }
+      .guide-2345 .hot-lanes .lane-content .line-item:hover {
+        box-shadow: 8px 8px 8px #e8e8e8;
+        outline: 1px solid #e8e8e8;
+        cursor: pointer; }
+    .guide-2345 .hot-lanes .lane-content .second-bg {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 7;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.2); }
+    .guide-2345 .hot-lanes .lane-content .line-cover {
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      position: absolute; }
+    .guide-2345 .hot-lanes .lane-content .name-block {
+      top: 0;
+      left: 0;
+      right: 0;
+      color: white;
+      bottom: 0;
+      z-index: 9;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.5);
+      /* Old browsers */
+      background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 25%, transparent 75%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(0, 0, 0, 0.5)), color-stop(75%, transparent));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 25%, transparent 75%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 25%, transparent 75%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.5) 25%, transparent 75%);
+      /* IE10+ */
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 25%, transparent 75%);
+      /* W3C */
+      /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=1 ); IE6-9 */ }
+      .guide-2345 .hot-lanes .lane-content .name-block .left-content {
+        margin: 20px 0 15px 20px;
+        width: 320px;
+        float: left; }
+      .guide-2345 .hot-lanes .lane-content .name-block .product-name {
+        width: 430px;
+        height: 40px;
+        overflow: hidden;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 40px;
+        position: relative;
+        z-index: 1; }
+      .guide-2345 .hot-lanes .lane-content .name-block .line-city-text {
+        font-size: 12px;
+        color: #39b8e8; }
+      .guide-2345 .hot-lanes .lane-content .name-block .line-city-names {
+        font-size: 14px; }
+      .guide-2345 .hot-lanes .lane-content .name-block .show-block {
+        padding-left: 2px; }
+      .guide-2345 .hot-lanes .lane-content .name-block .show-line {
+        position: relative;
+        top: 10px;
+        background-color: #fff;
+        width: 1px;
+        height: 36px;
+        margin-left: 7px;
+        display: inline-block; }
+      .guide-2345 .hot-lanes .lane-content .name-block .car-icon {
+        position: relative;
+        color: #727272;
+        font-size: 18px;
+        background-color: #fff;
+        border-radius: 40px;
+        padding: 8px; }
+      .guide-2345 .hot-lanes .lane-content .name-block .line-days {
+        font-size: 24px; }
+      .guide-2345 .hot-lanes .lane-content .name-block .show-price {
+        font-size: 22px; }
+      .guide-2345 .hot-lanes .lane-content .name-block .show-unit {
+        font-size: 14px; }
+      .guide-2345 .hot-lanes .lane-content .name-block .show-save {
+        font-size: 14px; }
+      .guide-2345 .hot-lanes .lane-content .name-block .right-content {
+        float: left;
+        width: 125px;
+        padding-top: 15px;
+        position: relative;
+        z-index: 0; }
+      .guide-2345 .hot-lanes .lane-content .name-block .right-cover {
+        width: 100%; }
+  .guide-2345 .hot-hotels {
+    position: relative; }
+    .guide-2345 .hot-hotels .hotel-content .product-card {
+      width: 300px;
+      margin: 0 8px 15px 8px;
+      display: inline-block; }
+    .guide-2345 .hot-hotels .hotel-content .product-item {
+      padding-bottom: 1px; }
+      .guide-2345 .hot-hotels .hotel-content .product-item:hover {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none; }
+      .guide-2345 .hot-hotels .hotel-content .product-item .price {
+        right: 0;
+        color: #fff;
+        bottom: 15px;
+        padding: 2px 10px;
+        display: block;
+        position: absolute;
+        background: rgba(109, 179, 129, 0.8);
+        transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s; }
+        .guide-2345 .hot-hotels .hotel-content .product-item .price em {
+          font-size: 22px;
+          font-style: normal; }
+    .guide-2345 .hot-hotels .hotel-content .product-wrap {
+      border: 1px solid #d9d9d9;
+      height: 330px;
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+      background-color: #f6f6f6; }
+      .guide-2345 .hot-hotels .hotel-content .product-wrap:hover {
+        box-shadow: 0 0 8px #e8e8e8;
+        outline: 1px solid #e8e8e8; }
+    .guide-2345 .hot-hotels .hotel-content .product-image {
+      width: 100%;
+      height: 170px; }
+    .guide-2345 .hot-hotels .hotel-content .over-image {
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 170px;
+      position: absolute; }
+    .guide-2345 .hot-hotels .hotel-content .name-block {
+      width: 100%;
+      height: 120px;
+      overflow: hidden;
+      padding: 16px 11px 0 11px; }
+    .guide-2345 .hot-hotels .hotel-content .name-text {
+      color: #353535;
+      font-weight: bold;
+      max-height: 48px;
+      overflow: hidden;
+      font-size: 16px;
+      line-height: 24px; }
+    .guide-2345 .hot-hotels .hotel-content .hotel-level {
+      font-weight: bold;
+      text-align: left;
+      font-size: 12px;
+      color: #333333;
+      position: relative;
+      margin-top: 5px; }
+      .guide-2345 .hot-hotels .hotel-content .hotel-level i {
+        margin-left: 5px; }
+      .guide-2345 .hot-hotels .hotel-content .hotel-level .star-inside {
+        font-size: 12px;
+        color: #ff6600;
+        overflow: hidden;
+        position: absolute;
+        top: 2px; }
+    .guide-2345 .hot-hotels .hotel-content .benefit-text {
+      color: #999;
+      font-size: 12px; }
+    .guide-2345 .hot-hotels .hotel-content .price-block {
+      position: absolute;
+      margin-top: 9px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: white;
+      font-size: 14px;
+      right: 0px;
+      top: 130px;
+      background-color: #057ebc; }
+      .guide-2345 .hot-hotels .hotel-content .price-block em {
+        font-size: 22px;
+        font-style: normal; }
+    .guide-2345 .hot-hotels .hotel-content .old-price-text {
+      padding-left: 11px;
+      font-size: 12px;
+      color: #666; }
+    .guide-2345 .hot-hotels .hotel-content .old-price-gold {
+      font-size: 12px;
+      text-decoration: line-through;
+      color: #666; }
+    .guide-2345 .hot-hotels .hotel-content .sales-block {
+      text-align: center; }
+      .guide-2345 .hot-hotels .hotel-content .sales-block i {
+        color: #057ebc; }
+      .guide-2345 .hot-hotels .hotel-content .sales-block .sales_volume {
+        color: black; }
+
+ins {
+  display: none !important; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }

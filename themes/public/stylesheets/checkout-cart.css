@@ -1,0 +1,620 @@
+.main-header {
+  background: #464646; }
+  .main-header .navbarheader {
+    background: #464646; }
+  .main-header .btn-groups {
+    display: none; }
+  .main-header .navbar-text {
+    display: none; }
+  .main-header .icon-slogan {
+    color: #fff; }
+
+#btn_dropdown {
+  display: none; }
+
+#account_panel {
+  display: none; }
+
+.main-wrap {
+  width: 1140px;
+  margin: 0 auto; }
+
+i, em {
+  font-style: normal; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.img-holder {
+  display: inline-block;
+  vertical-align: top;
+  width: 91px;
+  height: 60px; }
+
+.head-title {
+  font-size: 18px;
+  color: #a0a0a0;
+  line-height: 78px; }
+
+.fl {
+  float: left; }
+
+.color-orange {
+  color: #fe6d1e; }
+
+.color-green {
+  color: #6db381; }
+
+.dib {
+  display: inline-block; }
+
+.hotel-info {
+  margin-left: 10px;
+  padding: 5px 12px;
+  display: inline-block;
+  color: #737373; }
+
+.product-table {
+  margin-bottom: 10px; }
+  .product-table > thead > tr > th {
+    width: 110px;
+    font-size: 14px;
+    line-height: 40px;
+    background: #f3f3f3;
+    color: #6e6e6e;
+    text-align: center; }
+  .product-table th.th-name {
+    width: 590px;
+    text-align: left;
+    padding-left: 35px; }
+  .product-table tr.editable {
+    border: 2px solid #f60; }
+    .product-table tr.editable .td-name {
+      padding-bottom: 60px; }
+  .product-table > tbody > tr > td {
+    padding-top: 26px;
+    text-align: center;
+    vertical-align: top;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ebebeb; }
+  .product-table .td-price {
+    color: #6db381; }
+  .product-table .price-tips {
+    background: url(../images/checkout/price-tips.png);
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    position: relative; }
+    .product-table .price-tips:hover .price-tips-box {
+      display: block; }
+    .product-table .price-tips .price-tips-box {
+      display: none;
+      position: absolute;
+      border: 1px solid #c7c7c7;
+      width: 290px;
+      font-size: 12px;
+      left: -135px;
+      top: 30px;
+      padding: 6px;
+      color: #525252; }
+      .product-table .price-tips .price-tips-box .arrow-up {
+        border-style: solid;
+        border-width: 5px 7px;
+        border-color: transparent transparent #c7c7c7 transparent;
+        width: 0;
+        position: absolute;
+        top: -11px;
+        left: 135px; }
+        .product-table .price-tips .price-tips-box .arrow-up:before {
+          content: '';
+          border-style: solid;
+          border-width: 5px 7px;
+          border-color: transparent transparent #fff transparent;
+          top: -3px;
+          left: -7px;
+          position: absolute; }
+  .product-table .selected-list .td-quantity {
+    position: relative;
+    /*& > div {
+        display             : inline-block;
+        border              : 1px solid #ccc;
+        width               : 27px;
+        height              : 27px;
+        vertical-align      : top;
+        font-size           : 20px;
+        line-height         : 22px;
+        color               : #525252;
+        cursor              : pointer;
+        -webkit-user-select : none;
+        -moz-user-select    : none;
+        background          : #f3f3f3;
+        &:hover {
+            border : 1px solid #fe6d1e;
+            color  : #fe6d1e;
+        }
+        &.disable {
+            cursor : default;
+            color  : #ddd;
+            &:hover {
+                border : 1px solid #ccc;
+                color  : #ddd;
+            }
+        }
+    }*/ }
+    .product-table .selected-list .td-quantity .quantity-tips {
+      position: absolute;
+      top: 60px;
+      left: -18px;
+      white-space: nowrap;
+      width: 150px;
+      font-size: 12px; }
+    .product-table .selected-list .td-quantity input {
+      width: 27px;
+      height: 27px;
+      border: 1px solid #c7c7c7;
+      border-left: 0;
+      border-right: 0;
+      color: #525252;
+      text-align: center;
+      outline: none; }
+  .product-table .td-subtotal {
+    color: #fe6d1e; }
+  .product-table .td-operation {
+    color: #b0b0b0;
+    cursor: default; }
+    .product-table .td-operation a {
+      color: #b0b0b0; }
+  .product-table .td-name {
+    text-align: left;
+    padding-left: 32px;
+    position: relative; }
+    .product-table .td-name img {
+      vertical-align: top; }
+    .product-table .td-name .product-content {
+      display: inline-block;
+      vertical-align: top; }
+      .product-table .td-name .product-content .add-label {
+        background: url(../images/checkout/enjoy-alone.png);
+        width: 50px;
+        height: 18px;
+        display: inline-block;
+        margin-left: 10px; }
+      .product-table .td-name .product-content h2 {
+        text-align: left;
+        font-size: 16px;
+        margin-bottom: 15px; }
+        .product-table .td-name .product-content h2 span {
+          line-height: 22px;
+          vertical-align: middle; }
+      .product-table .td-name .product-content ul {
+        float: left;
+        color: #4f4f4f;
+        font-size: 14px;
+        list-style: decimal;
+        padding-left: 20px;
+        margin: 0; }
+        .product-table .td-name .product-content ul li {
+          margin-bottom: 6px;
+          color: #4f4f4f; }
+  .product-table .confirm-btn {
+    float: right;
+    margin-right: 65px;
+    padding: 5px 50px;
+    background: #f60;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    -moz-user-select: none;
+    -webkit-user-select: none; }
+
+.price-bar {
+  color: #000; }
+  .price-bar > div {
+    text-align: right;
+    padding-right: 10px;
+    font-size: 16px; }
+  .price-bar .sum-orig-price {
+    display: inline-block;
+    margin-right: 10px; }
+  .price-bar .sum-price {
+    display: inline-block; }
+    .price-bar .sum-price em {
+      font-size: 32px;
+      color: #fe6d1e;
+      font-family: verdana;
+      font-style: normal; }
+      .price-bar .sum-price em span {
+        font-size: 20px; }
+    .price-bar .sum-price i {
+      color: #fe6d1e; }
+
+.middle-bar {
+  line-height: 90px;
+  height: 90px; }
+  .middle-bar .option-title {
+    float: left;
+    font-size: 16px;
+    color: #a0a0a0; }
+
+.optional-list {
+  width: 494px;
+  float: left;
+  margin-bottom: 30px; }
+  .optional-list li {
+    margin-bottom: 12px;
+    background: #f3f3f3;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    padding-left: 41px; }
+    .optional-list li:hover {
+      background: #ddd; }
+  .optional-list .checkbox {
+    margin: 0 12px;
+    width: 17px;
+    border: 1px solid #bababa;
+    height: 17px;
+    background: #fff;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 17px;
+    color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -8px; }
+    .optional-list .checkbox:before {
+      font-family: "Hitour";
+      content: '\e65c';
+      margin-left: 1px; }
+  .optional-list li.active {
+    background: #3caf7d;
+    color: #fff; }
+    .optional-list li.active .checkbox:before {
+      color: #3caf7d; }
+
+.optional-product {
+  position: relative; }
+  .optional-product .more-info {
+    float: left;
+    margin-left: 45px;
+    border: 1px solid #ebebeb;
+    background: #fff;
+    padding: 15px 25px;
+    width: 600px;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 495px;
+    top: -6px;
+    transition: 0.4s; }
+    .optional-product .more-info .arrow-left {
+      border-style: solid;
+      border-width: 12px 16px;
+      border-color: transparent #ebebeb transparent transparent;
+      width: 0;
+      position: absolute;
+      top: 20px;
+      left: -33px; }
+      .optional-product .more-info .arrow-left:before {
+        content: "";
+        border-style: solid;
+        border-width: 12px 16px;
+        border-color: transparent #fff transparent transparent;
+        width: 0;
+        position: absolute;
+        top: -12px;
+        left: -14px; }
+    .optional-product .more-info .more-title {
+      width: 100%;
+      height: 30px; }
+      .optional-product .more-info .more-title h3 {
+        font-size: 14px;
+        float: left; }
+      .optional-product .more-info .more-title .price-ctn {
+        float: right;
+        color: #6db381; }
+        .optional-product .more-info .more-title .price-ctn i {
+          text-decoration: line-through;
+          color: #b0b0b0;
+          margin-right: 10px; }
+        .optional-product .more-info .more-title .price-ctn em {
+          font-size: 18px;
+          font-family: Helvitica_Neue_Thin; }
+    .optional-product .more-info .content-list {
+      float: left; }
+      .optional-product .more-info .content-list h2 {
+        display: none; }
+      .optional-product .more-info .content-list ol {
+        padding-left: 20px;
+        margin: 0; }
+
+.progress-bar {
+  width: 100%;
+  height: 84px;
+  background: #fafafa;
+  line-height: 84px; }
+  .progress-bar .btn-ctn {
+    width: 1140px;
+    margin: 0 auto; }
+    .progress-bar .btn-ctn .button {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      color: #c1c1c1;
+      font-size: 16px;
+      padding: 10px 20px;
+      line-height: 18px; }
+    .progress-bar .btn-ctn .back-btn {
+      margin-left: 738px;
+      margin-right: 10px;
+      width: 180px; }
+      .progress-bar .btn-ctn .back-btn:hover {
+        text-decoration: none; }
+    .progress-bar .btn-ctn .next-btn {
+      background: #3caf7d;
+      color: #fff; }
+
+.product-dialog-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  display: none; }
+
+.product-dialog {
+  width: 664px;
+  padding: 20px 60px;
+  border: 1px solid #ebebeb;
+  margin: 0 auto;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  margin-left: -332px;
+  background: #fff;
+  color: #525252; }
+  .product-dialog ul {
+    margin: 10px 0; }
+  .product-dialog li {
+    cursor: pointer; }
+  .product-dialog .close-btn {
+    position: absolute;
+    right: 16px;
+    font-size: 20px;
+    top: 10px;
+    color: #a0a0a0;
+    cursor: pointer; }
+    .product-dialog .close-btn:before {
+      font-family: "Hitour";
+      content: "\e634";
+      font-size: 14px; }
+    .product-dialog .close-btn:hover {
+      text-decoration: none; }
+  .product-dialog h3 {
+    font-size: 18px;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    font-weight: normal;
+    color: #000; }
+  .product-dialog .field-ctn {
+    padding: 5px 0; }
+    .product-dialog .field-ctn .label {
+      color: #525252; }
+    .product-dialog .field-ctn .sep {
+      font-size: 16px;
+      margin: 0 20px;
+      color: #dadada; }
+    .product-dialog .field-ctn li {
+      padding: 7px 0;
+      color: #525252; }
+      .product-dialog .field-ctn li:hover {
+        color: #6db381; }
+      .product-dialog .field-ctn li em {
+        float: right;
+        margin-right: 26px; }
+  .product-dialog select {
+    border: 1px solid #dadada;
+    background: #fff;
+    -webkit-appearance: none;
+    height: 24px;
+    width: 50px;
+    border-radius: 0;
+    line-height: 24px;
+    padding-left: 15px; }
+  .product-dialog .departure select {
+    width: 440px; }
+  .product-dialog .select-holder {
+    position: relative;
+    display: inline-block; }
+    .product-dialog .select-holder .arrow-down {
+      border-style: solid;
+      border-width: 4px 4px;
+      border-color: #525252 transparent transparent transparent;
+      width: 0;
+      position: absolute;
+      top: 10px;
+      right: 8px; }
+      .product-dialog .select-holder .arrow-down:before {
+        content: "";
+        border-style: solid;
+        border-width: 4px 4px;
+        border-color: #fff transparent transparent transparent;
+        width: 0;
+        position: absolute;
+        top: -5px;
+        left: -4px; }
+  .product-dialog input {
+    border: 1px solid #dadada;
+    height: 24px; }
+  .product-dialog .radio {
+    position: relative;
+    font-size: 18px;
+    vertical-align: middle;
+    margin-right: 10px; }
+    .product-dialog .radio:before {
+      font-family: "Hitour";
+      content: "\e63c"; }
+  .product-dialog .radio-inner {
+    font-size: 12px;
+    position: absolute;
+    left: 3px;
+    top: 1px; }
+    .product-dialog .radio-inner:before {
+      font-family: "Hitour";
+      content: "\e63d";
+      color: #fff; }
+  .product-dialog li.active {
+    color: #6db381; }
+    .product-dialog li.active .radio-inner:before {
+      color: #6db381; }
+  .product-dialog .confirm-btn {
+    width: 220px;
+    background: #6db381;
+    margin: 0 auto;
+    color: #fff;
+    border: 0;
+    padding: 10px 0;
+    display: block;
+    font-size: 16px; }
+
+.edit-panel {
+  position: absolute;
+  width: 1105px;
+  left: 32px;
+  top: 60px; }
+
+.field-ctn {
+  padding: 5px 0;
+  font-size: 14px;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle; }
+  .field-ctn .error {
+    border: 1px solid #f00 !important; }
+  .field-ctn .select-holder {
+    position: relative; }
+    .field-ctn .select-holder .i-arrow-down {
+      position: absolute;
+      top: 1px;
+      right: 10px;
+      font-size: 12px;
+      pointer-events: none; }
+      .field-ctn .select-holder .i-arrow-down:before {
+        content: "\e610";
+        font-family: "hitour"; }
+  .field-ctn .select {
+    border: 1px solid #dadada;
+    background: #fff;
+    width: 200px;
+    height: 38px;
+    line-height: 38px;
+    vertical-align: middle;
+    font-size: 14px;
+    outline: none;
+    padding-left: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .field-ctn .select-box {
+    position: absolute;
+    top: 39px;
+    z-index: 20; }
+    .field-ctn .select-box .option {
+      padding: 6px 18px;
+      border: 1px solid #dadada;
+      border-top: 0;
+      cursor: pointer;
+      background: #fff;
+      width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      z-index: 10; }
+      .field-ctn .select-box .option:hover {
+        color: #6db381; }
+  .field-ctn .tour-date {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 38px;
+    width: 200px;
+    font-size: 14px;
+    border: 1px solid #dadada;
+    padding-left: 50px; }
+    .field-ctn .tour-date .date-text {
+      line-height: 38px; }
+    .field-ctn .tour-date .i-calendar {
+      position: absolute;
+      left: 18px;
+      top: -1px;
+      font-size: 18px;
+      font-family: "hitour", sans-serif;
+      line-height: 38px; }
+      .field-ctn .tour-date .i-calendar:before {
+        font-size: 18px;
+        content: "\e623";
+        font-family: "hitour", sans-serif; }
+
+.date-legend {
+  border-top: 1px solid #ccc;
+  padding: 12px 22px 10px 22px; }
+  .date-legend .legend-item {
+    line-height: 18px;
+    display: inline-block;
+    width: 98px; }
+  .date-legend .buy-rule {
+    margin-top: 5px;
+    color: #6db381; }
+    .date-legend .buy-rule:before {
+      font-family: "hitour";
+      content: "\e647";
+      margin-right: 15px;
+      font-size: 18px;
+      position: relative;
+      top: 2px; }
+  .date-legend .date-enable {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: #6db381;
+    vertical-align: top;
+    margin-right: 15px; }
+  .date-legend .date-disable {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-color: #eee;
+    vertical-align: top;
+    margin-right: 15px; }
+
+.xCalendar {
+  left: -1px; }
+
+@-webkit-keyframes blink {
+  0% {
+    border: 1px solid red; }
+
+  25% {
+    border: 1px solid #DADADA; }
+
+  50% {
+    border: 1px solid red; }
+
+  75% {
+    border: 1px solid #DADADA; }
+
+  100% {
+    border: 1px solid red; } }
+
+.ani-blink {
+  -webkit-animation: blink;
+  -webkit-animation-duration: 1s; }
+
+.vhidden {
+  visibility: hidden; }

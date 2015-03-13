@@ -1,0 +1,1 @@
+<script src="themes/admin/views/admin/order/javascripts/orderSummaryListCtrl.js"></script>

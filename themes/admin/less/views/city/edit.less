@@ -1,0 +1,214 @@
+#city-edit-container {
+    .city-cover {
+        .banner-img {
+            width  : 100%;
+            height : 135px;
+        }
+        .cover-img {
+            width  : 137px;
+            height : 100px;
+        }
+    }
+    .forms-table {
+        width : 100%;
+    }
+    .groups-list-container {
+        .btn-group .dropdown-menu {
+            left : 0;
+        }
+        .one-block {
+            min-height     : 1 * @grid-height;
+            padding        : @grid-height / 2 @grid-height;
+            padding-bottom : 0px;
+            margin-bottom  : 20px;
+
+            .title {
+                margin-bottom : @grid-height / 2;
+                font-size     : 18px;
+                font-weight   : bolder;
+            }
+            .small-desc {
+                font-size      : @body-font-small;
+                padding-bottom : 0px;
+            }
+            .ordering {
+                top         : 14px;
+                right       : @grid-height * 7.5;
+                color       : rgba(130, 130, 130, .5);
+                position    : absolute;
+                font-size   : 40px;
+                line-height : 40px;
+            }
+            .group-name {
+                width : 140px;
+            }
+            .exp-group-name {
+                width  : 140px;
+                margin : 10px 0px 15px 0px;
+            }
+            .all-status {
+                top      : @grid-height;
+                right    : 2 * @grid-height;
+                position : absolute;
+            }
+            .btn-group {
+                .btn.dropdown-toggle {
+                    width : @grid-height * 5;
+                }
+            }
+            &.editing {
+                color      : @white;
+                background : @brand-secondary;
+                .title, .small-desc, .brand-secondary, .all-status {
+                    color : @white;
+                }
+            }
+        }
+    }
+    .groups-edit-container {
+        .row.text-center {
+            font-size : 0;
+        }
+        .group-edit-info {
+            padding  : @grid-height @grid-width;
+            position : relative;
+            .block-btn {
+                right    : @grid-height;
+                bottom   : @grid-height / 2;
+                position : absolute;
+            }
+            textarea {
+                resize : none;
+            }
+        }
+        .one-block.side-block {
+            width    : 49%;
+            height   : 400px;
+            margin   : 0;
+            padding  : @grid-height @grid-width;
+            overflow : scroll;
+            .inline-block(top);
+            &.margin {
+                margin-right : 2%;
+            }
+        }
+        .item-list-container {
+            overflow : hidden;
+            .item-name {
+                width          : 90%;
+                display        : inline-block;
+                vertical-align : top;
+            }
+            &.ungrouped .list-title {
+                color : @brand-secondary;
+            }
+            &.grouped {
+                margin-top : 2 * @grid-height;
+                .list-title {
+                    color : @orange;
+                }
+            }
+            &.ingroup {
+                li {
+                    padding-top    : 8px;
+                    padding-bottom : 8px;
+                }
+                .list-title {
+                    color : @brand-primary;
+                }
+                .item-name {
+                    width : 80%;
+                }
+            }
+            .item-list {
+                padding       : 0;
+                margin-bottom : -1px;
+            }
+            .item-order {
+                width        : @grid-height * 1.5;
+                height       : @grid-height;
+                padding      : 0 @grid-height / 4;
+                display      : inline-block;
+                font-size    : @body-font;
+                line-height  : @body-font-large;
+                margin-right : @grid-height / 2;
+            }
+            li {
+                margin        : 0;
+                padding       : @grid-height / 2 @grid-height / 4;
+                position      : relative;
+                font-size     : @body-font;
+                list-style    : none;
+                line-height   : @body-font-large;
+                border-bottom : 1px solid @gray-light;
+                .i {
+                    right       : @grid-height / 4;
+                    position    : absolute;
+                    line-height : @grid-height;
+                }
+            }
+        }
+        .upload-holder {
+            height : 166px;
+        }
+        &.other {
+            .one-block {
+                height   : 400px;
+                padding  : @grid-height @grid-width;
+                overflow : scroll;
+            }
+        }
+    }
+    .midline-separator {
+        height     : 1px;
+        background : @brand-primary;
+        margin-top : @grid-height;
+    }
+    .product-names {
+        width    : 100%;
+        height   : 56px;
+        overflow : hidden;
+    }
+    .copy-btn {
+        margin-top : 10px;
+    }
+    .city-names {
+        width : 100%;
+        .chosen-container {
+            width : 184px !important;
+        }
+        .block-action {
+            position : absolute;
+            top      : 45px;
+            left     : -80px;
+            width    : 184px !important;
+        }
+        .one-block {
+            padding    : 10px 10px !important;
+            margin-top : 20px;
+            height     : 112px !important;
+        }
+        .process-msg {
+            position : absolute;
+            top      : 52px;
+            color    : #6db381;
+            right    : 20px;
+        }
+    }
+    .radio-switch {
+        margin-top : 10px !important;
+        .show-label {
+            min-width : 70px !important;
+            padding   : 0;
+            border    : 1px solid #34495e;
+        }
+    }
+}
+
+//city index page
+#city-search-container {
+    .recommend-city-block {
+        padding  : 20px;
+        position : relative;
+    }
+}

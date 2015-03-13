@@ -1,0 +1,160 @@
+@font-face {
+	font-family: 'hitour';
+	src:url('fonts/hitour.eot?-xq81zs');
+	src:url('fonts/hitour.eot?#iefix-xq81zs') format('embedded-opentype'),
+		url('fonts/hitour.woff?-xq81zs') format('woff'),
+		url('fonts/hitour.ttf?-xq81zs') format('truetype'),
+		url('fonts/hitour.svg?-xq81zs#hitour') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="i-"], [class*=" i-"] {
+	font-family: 'hitour';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.i-triangle-right:before {
+	content: "\e600";
+}
+.i-triangle-down:before {
+	content: "\e601";
+}
+.i-triangle-left:before {
+	content: "\e602";
+}
+.i-triangle-up:before {
+	content: "\e603";
+}
+.i-plus:before {
+	content: "\e604";
+}
+.i-minus:before {
+	content: "\e605";
+}
+.i-heart-filled:before {
+	content: "\e606";
+}
+.i-heart-empty:before {
+	content: "\e607";
+}
+.i-share:before {
+	content: "\e608";
+}
+.i-swift-arrow-right:before {
+	content: "\e609";
+}
+.i-eye:before {
+	content: "\e60a";
+}
+.i-search:before {
+	content: "\e60b";
+}
+.i-calendar:before {
+	content: "\e60c";
+}
+.i-check:before {
+	content: "\e60d";
+}
+.i-close:before {
+	content: "\e60e";
+}
+.i-trash:before {
+	content: "\e60f";
+}
+.i-arrow-left:before {
+	content: "\e610";
+}
+.i-arrow-right:before {
+	content: "\e611";
+}
+.i-refresh:before {
+	content: "\e612";
+}
+.i-edit:before {
+	content: "\e613";
+}
+.i-save:before {
+	content: "\e614";
+}
+.i-enter:before {
+	content: "\e615";
+}
+.i-star-filled:before {
+	content: "\e617";
+}
+.i-star-empty:before {
+	content: "\e616";
+}
+.i-arrow-up:before {
+	content: "\e618";
+}
+.i-arrow-down:before {
+	content: "\e619";
+}
+.i-thin-arrow-up:before {
+	content: "\e61a";
+}
+.i-thin-arrow-down:before {
+	content: "\e61b";
+}
+.i-thin-arrow-left:before {
+	content: "\e61c";
+}
+.i-thin-arrow-right:before {
+	content: "\e61d";
+}
+.i-rating-star:before {
+	content: "\e61e";
+}
+.i-star-circle-bg:before {
+	content: "\e61f";
+}
+.i-hotel-circle-bg:before {
+	content: "\e620";
+}
+.i-text-circle-bg:before {
+	content: "\e621";
+}
+.i-location-circle-bg:before {
+	content: "\e622";
+}
+.i-star-filled2:before {
+	content: "\e623";
+}
+.i-hotel:before {
+	content: "\e624";
+}
+.i-text:before {
+	content: "\e625";
+}
+.i-location:before {
+	content: "\e626";
+}
+.i-plus-circle-bg:before {
+	content: "\e627";
+}
+.i-road-circle-bg:before {
+	content: "\e628";
+}
+.i-bus-circle-bg:before {
+	content: "\e629";
+}
+.i-walk-circle-bg:before {
+	content: "\e62a";
+}
+.i-drive-circle-bg:before {
+	content: "\e62b";
+}
+.i-plus-circle:before {
+	content: "\e62c";
+}

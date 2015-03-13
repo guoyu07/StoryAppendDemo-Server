@@ -1,0 +1,293 @@
+#hi-header {
+    font-family : "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "华文细黑", "STHeiti", "微软雅黑", "Microsoft YaHei", SimHei, sans-serif;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+    position: relative;
+    z-index: 1000;
+    background: #FFF;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .main-header {
+        height: 70px;
+        width: 1020px;
+        margin: 0 auto;
+        background: #fff;
+    }
+    .logo-navigator, .icon-slogan, .navigate-ctn {
+        float : left;
+    }
+    .icon-slogan {
+        color: $deep-green;
+        font-size: 40px;
+        line-height: 70px;
+        margin-right: 60px;
+        text-decoration: none;
+    }
+    .navigate-ctn {
+        margin-top: 11px;
+        padding: 0 28px 0 38px;
+        height: 44px;
+        line-height: 44px;
+        position: relative;
+        color: $big-title-grey;
+        &:hover {
+            @include genPrefix(box-shadow, 0 0 5px rgba(0,0,0,.2));
+            .btn-srh, .toggle-drop-icon {
+                color: $deep-green;
+            }
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+            padding-bottom: 3px;
+            &:hover {
+                color : $deep-green;
+                box-shadow: 0 2px 0 0 $deep-green;
+            }
+        }
+    }
+    .btn-dropdown {
+        padding-right: 20px;
+        cursor : pointer;
+    }
+    .btn-srh {
+        @include inline-block(middle);
+        padding: 0;
+        margin: 0;
+        background: none;
+        border: none;
+        font-size: 14px;
+    }
+    .toggle-drop-icon {
+        font-size: 8px;
+        margin-left: 5px;
+        &:before {
+            content: "\e610";
+            font-family: 'hitour';
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    }
+    .navigate-overlay {
+        position : absolute;
+        top: 44px;
+        left : 0;
+        width: 240px;
+        background: white;
+        z-index: 9999;
+        line-height : 1;
+        display : none;
+        padding: 0 20px;
+        @include genPrefix(box-shadow, 0 0 5px rgba(0,0,0,.2));
+    }
+    .nav-menu {
+        position : relative;
+        padding: 18px 5px;
+    }
+    .sub-menu {
+        background: white;
+        border-bottom : 1px solid #eee;
+        &:last-child {
+            border-bottom: none;
+        }
+        &:hover {
+            .enter-symbol {
+                color : $deep-green;
+            }
+        }
+        &.maintain-hover {
+            .enter-symbol {
+                color: $deep-green;
+                right: -1px;
+            }
+        }
+    }
+    h3 {
+        font-size: 16px;
+        color: $deep-green;
+        height: 28px;
+        line-height: 28px;
+    }
+    h4 {
+        font-size: 14px;
+        font-weight: bold;
+        color: #525252;
+        @include inline-block(middle);
+        width: 90px;
+        height : 24px;
+        line-height: 24px;
+    }
+    .enter-symbol {
+        position : absolute;
+        height : 20px;
+        margin-top: -10px;
+        top: 50%;
+        right: 0;
+        font-size: 16px;
+        line-height: 20px;
+        color : #cbcbcb;
+    }
+    .nav-popover {
+        position : absolute;
+        top: 0;
+        left: 240px;
+        z-index: -1;
+        width: 510px;
+        background: $bg-grey;
+        padding: 25px 30px 10px;
+        display : none;
+        @include genPrefix(box-shadow, 0 0 5px rgba(0,0,0,.2));
+        h3 {
+            padding: 0 5px 10px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .country-ctn {
+            overflow : hidden;
+            margin-bottom: 8px;
+        }
+        h4 {
+            float : left;
+            width: 90px;
+            text-align: right;
+            height : 20px;
+            color: #333;
+            margin-right: 35px;
+            a {
+                font-size: 16px;
+                color: #333;
+                height: 20px;
+                line-height: 20px;
+            }
+        }
+        h5 {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 2px 10px;
+        }
+        .cities-ctn {
+            overflow : hidden;
+            span {
+                padding: 1px 10px 0;
+                line-height: 20px;
+                @include inline-block(middle);
+                margin-bottom: 6px;
+                border-right: 1px solid #ccc;
+                white-space: nowrap;
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+    .clear-shadow {
+        position : absolute;
+        width : 100%;
+        height: 5px;
+        background : white;
+        bottom: 0;
+        left : 0;
+        z-index : 10000;
+    }
+
+    .account-panel {
+        float : right;
+    }
+    .access-ctn > a {
+        font-size: 14px;
+        line-height: 70px;
+        color: $big-title-grey;
+        text-decoration: none;
+        margin-left: 20px;
+        cursor: pointer;
+        &:hover {
+            color: $deep-green;
+        }
+    }
+    .account-ctn {
+        > a, .my-account {
+            padding-top : 40px;
+            font-size: 12px;
+            color: #888;
+            margin-left: 30px;
+            cursor : pointer;
+            text-decoration: none;
+            float : left;
+            &:hover {
+                color: #666;
+            }
+        }
+    }
+    .account-menu {
+        position : relative;
+        float : left;
+    }
+    .my-account {
+        &:before {
+            content: '\e635';
+            font-family: 'hitour';
+            font-size: 20px;
+            color: #666;
+            position : absolute;
+            margin: -30px 0 0 10px;
+        }
+        &:after {
+            content: '\e610';
+            font-family: 'hitour';
+            font-size: 8px;
+            margin-left: 2px;
+        }
+    }
+    .my-order {
+        &:before {
+            content: '\e660';
+            font-family: 'hitour';
+            color: #666;
+            font-size: 20px;
+            position : absolute;
+            margin: -30px 0 0 14px;
+        }
+    }
+    .my-favorite {
+        &:before {
+            content: '\e651';
+            font-family: 'hitour';
+            color: #666;
+            font-size: 20px;
+            position : absolute;
+            margin: -30px 0 0 14px;
+        }
+    }
+    .action-list {
+        &.active {
+            display : block;
+        }
+        position : absolute;
+        display : none;
+        z-index: 9999;
+        width: 110px;
+        padding: 8px 20px;
+        top: 62px;
+        left : 0;
+        background: white;
+        @include genPrefix(box-shadow, 0 0 5px rgba(0,0,0,.2));
+        a {
+            color : #888;
+            font-size: 12px;
+            line-height: 30px;
+            text-decoration: none;
+            &:hover {
+                color: $deep-green;
+            }
+        }
+        .logout {
+            color: red;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}

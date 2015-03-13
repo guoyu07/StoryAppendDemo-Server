@@ -1,0 +1,94 @@
+.city-header {
+    position            : relative;
+    height              : 220px;
+    background-color    : #000;
+    background-repeat   : no-repeat;
+    background-position : center bottom;
+    .wrap {
+        position : relative;
+    }
+}
+
+.city-name {
+    position    : absolute;
+    top         : 100px;
+    left        : 0;
+    color       : #fff;
+    font-weight : 200;
+    text-shadow : 1px 1px 5px #000;
+    .cn-name {
+        display     : inline-block;
+        font-size   : 50px;
+        line-height : 1;
+    }
+    .en-name {
+        display     : inline-block;
+        margin-left : 5px;
+        font-size   : 40px;
+        line-height : 1;
+    }
+}
+
+.city-breadcrumb {
+    position         : absolute;
+    bottom           : 0;
+    width            : 100%;
+    height           : 50px;
+    line-height      : 50px;
+    background-color : rgba(0, 0, 0, 0.5);
+    font-weight      : bold;
+    .breadcrumb-wrap {
+        float       : left;
+        margin-left : -5px;
+    }
+    .breadcrumb-item {
+        line-height : 30px;
+        color       : #fff;
+        a {
+            display     : inline-block;
+            padding     : 0 8px;
+            line-height : 30px;
+            height      : 30px;
+            color       : #ddd;
+            &:hover {
+                color : #fff;
+            }
+        }
+        span {
+            padding : 0 8px;
+        }
+    }
+    .city-search {
+        float : right;
+    }
+    .search-wrap {
+        display          : block;
+        margin-top       : 10px;
+        height           : 30px;
+        background-color : rgba(255, 255, 255, 1);
+        line-height      : 30px;
+        border-radius    : 2px;
+        padding          : 0 6px;
+    }
+    .search-input {
+        background-color : transparent;
+        border           : 0;
+        width            : 200px;
+        font-weight      : lighter;
+        line-height      : 18px;
+        font-size        : 12px;
+    }
+    .search-btn {
+        display      : inline-block;
+        width        : 30px;
+        height       : 30px;
+        line-height  : 30px;
+        text-align   : center;
+        border-left  : 1px solid #eee;
+        padding-left : 6px;
+        &:hover {
+            color  : #6db381;
+            cursor : pointer;
+        }
+    }
+}

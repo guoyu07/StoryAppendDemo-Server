@@ -1,0 +1,244 @@
+#order-edit-container {
+  .comment-bottom {
+    display: inline-flex;
+    margin-top: 6px;
+  }
+  .comment-hour {
+    display: inline;
+    padding: 0;
+    width: 30px;
+  }
+  .comment-btn {
+    float: right;
+    margin-top: 10px;
+  }
+  .edit-btn {
+    float: right;
+    margin-right: 8px;
+    margin-top: 2px;
+  }
+  .comment-type {
+    .chosen-container {
+      width: 110px !important;
+    }
+  }
+  .complaint-type {
+    .chosen-container {
+      width: 127px !important;
+    }
+    .type-top {
+      padding-top: 5px;
+    }
+    .type-bottom {
+      margin-bottom: 5px;
+    }
+  }
+  .comment-block {
+    position: relative;
+  }
+  .delete-block {
+    top        : 0;
+    right      : 0;
+    width      : @grid-height + 2;
+    height     : @grid-height + 2;
+    position   : absolute;
+    background : @gray-light;
+    .i {
+      top         : 0;
+      right       : 0;
+      color       : @white;
+      width       : @grid-height;
+      height      : @grid-height;
+      cursor      : pointer;
+      z-index     : 10;
+      position    : absolute;
+      font-size   : @body-font-large;
+      text-align  : center;
+      background  : @brand-primary;
+      line-height : @grid-height;
+    }
+    &:before {
+      top        : 0;
+      right      : 0;
+      width      : @grid-height + 1;
+      height     : @grid-height + 1;
+      content    : "";
+      z-index    : 9;
+      position   : absolute;
+      background : @white;
+    }
+  }
+  .todo-row {
+    border: 1px solid @gray-light;
+    padding: @grid-height / 4 @grid-height;
+    background: @bg-lite;
+    border-top: 0;
+    &.border {
+      border-top: 1px solid @gray-light;
+      border-bottom: 1px solid #d4dbdf;
+    }
+    .todo-pro-status{
+      color: red;
+    }
+  }
+  #payment_info {
+    margin-top: 0;
+  }
+  .forms-table {
+    width: 100%;
+  }
+  .view-row.border {
+    border-top: 1px solid @gray-light;
+  }
+  .order-desc {
+    line-height: 24px;
+  }
+  .total-amount .small-desc {
+    padding-top: 4px;
+  }
+  .refund-amount {
+    .small-desc {
+      text-align: right;
+      padding-right: @grid-width / 2;
+    }
+    label {
+      line-height: 30px;
+    }
+  }
+
+  pre {
+    color: @brand-primary;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background: none;
+  }
+
+  .shipping-info {
+    font-size: 16px;
+    hr {
+      margin: 10px 0;
+    }
+    .upload-holder {
+      display: none;
+    }
+    .section-body .section-subtitle {
+      margin-top:15px;
+      margin-bottom: 10px;
+    }
+    .section-body .section-subbody {
+      margin-top: 15px;
+      margin-left: 0;
+    }
+    .save-edit-font{
+      color: #6db381;
+    }
+    .shipping-info-border{
+      border: 2px solid #6db381;
+    }
+  }
+
+  .one-meta {
+    float: none;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+    .meta-label, .meta-value, .meta-value-container {
+      .inline-block( top );
+    }
+    .meta-label {
+      color: @color-lite;
+      line-height: 30px;
+    }
+    .meta-value {
+      padding: 5px 8px;
+      font-size: 16px;
+      background: @bg-lite;
+      line-height: 20px;
+      font-family: monospace, sans-serif;
+    }
+    .meta-value, .meta-value-container {
+      width: 100%;
+    }
+    .quickdate {
+      background: @white;
+      line-height: 26px;
+    }
+  }
+
+  .one-shipping-product {
+    padding: @grid-height 2 * @grid-height;
+    background: @bg-lite;
+    .shipping-voucher {
+      position: relative;
+      .meta-value-container {
+        cursor: pointer;
+        width:330px;
+        a {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+    .meta-value {
+      width: 90%;
+    }
+    .i {
+      top: 10px;
+      right: 15px;
+      color: @red;
+      position: absolute;
+    }
+  }
+
+  .passenger-info {
+    .section-subbody {
+      font-size: 0;
+      background: @bg-lite;
+      padding-top: 15px;
+    }
+    .passenger-meta {
+
+      .meta-label {
+        width: 25%;
+      }
+      .meta-value, .meta-value-container {
+        width: 72%;
+      }
+    }
+  }
+}
+
+#meta-dialog {
+  .cover-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    .loading-container {
+      margin-top: 20%;
+      margin-left: 45%;
+      width: 30%;
+      z-index: 99;
+      color: #fff;
+      label {
+        font-size: 18px;
+      }
+    }
+  }
+  .dialog-container {
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    z-index: 100;
+    background-color: #fff;
+    width: 60%;
+    padding: 0px 40px 20px 40px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+}

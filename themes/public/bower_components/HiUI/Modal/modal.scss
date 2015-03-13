@@ -1,0 +1,54 @@
+@mixin bg-rgba($r,$g,$b,$a){
+    $color:rgba($r,$g,$b,$a);
+    background-color: $color;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($color)}',endColorstr='#{ie-hex-str($color)}');
+}
+
+.hi-modal {
+    .modal-wrap {
+        display: none;
+    }
+    &.pop {
+        .modal-wrap {
+            display          : none;
+            position         : fixed;
+            top              : 0;
+            left             : 50%;
+            margin-left      : -250px;
+            width            : 500px;
+            height           : 300px;
+            background-color : #fff;
+            z-index          : 1000;
+        }
+    }
+    &.side {
+        .modal-wrap {
+            display: block;
+            position         : fixed;
+            width            : 800px;
+            height           : 100%;
+            top              : 0;
+            right            : -800px;
+            background-color : #fff;
+            z-index          : 1000;
+            transition       : right 0.5s;
+        }
+    }
+    .full-overlay {
+        display           : none;
+        position          : fixed;
+        top               : 0;
+        left              : 0;
+        right             : 0;
+        bottom            : 0;
+        background-repeat : repeat;
+        background-color  : transparent;
+        z-index           : 999;
+        &.black {
+            @include bg-rgba(0, 0, 0, 0.6);
+        }
+        &.white {
+            @include bg-rgba(255, 255, 255, 0.7);
+        }
+    }
+}

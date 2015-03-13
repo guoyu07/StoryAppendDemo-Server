@@ -1,0 +1,275 @@
+@import "common";
+
+.kid-adult {
+  font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  .activity-header {
+    height: 920px;
+  }
+  .kidadult-image {
+    background: url(../images/activities/kidadult/activity-header.jpg) no-repeat center center;
+  }
+  .carnival-image {
+    background: url(../images/activities/carnival-11.11/activity-header.jpg) no-repeat center center;
+  }
+  .delicated-360header {
+    background: url(../images/activities/carnival-11.11/activity360-header.jpg) no-repeat center center;
+  }
+  .shopping-image {
+    background: url(../images/activities/shopping/activity-header.jpg) no-repeat center center;
+  }
+  .shopping-delicated-360header {
+    background: url(../images/activities/shopping/activity360-header.jpg) no-repeat center center;
+  }
+
+  .bg-grey {
+    background-color: $bg-grey;
+    color: black;
+  }
+
+  .bg-red {
+    background-color: #da3637;
+    color: white;
+  }
+
+  .bg-red {
+    background-color: #da3637;
+    color: white;
+  }
+
+  .bg-light-grey {
+    background-color: #f6f4ed;
+    color: black;
+  }
+
+  .bg-white {
+    background-color: white;
+    color: black;
+  }
+
+  .bg-linear-gradient {
+    background: -moz-linear-gradient(top, #f09b5b 0%, #f6f4ed 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-start(0%, #f09b5b), color-stop(100%, #f6f4ed)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f09b5b 0%, #f6f4ed 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f09b5b 0%, #f6f4ed 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f09b5b 0%, #f6f4ed 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #f09b5b 0%, #f6f4ed 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00f09b5b', endColorstr='#00f6f4ed', GradientType=0); /* IE6-9 */
+  }
+
+  .bg-linear-gradient-shopping {
+    background: -moz-linear-gradient(top, #ffa89a 0%, #f6f4ed 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-start(0%, #ffa89a), color-stop(100%, #f6f4ed)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffa89a 0%, #f6f4ed 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffa89a 0%, #f6f4ed 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffa89a 0%, #f6f4ed 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffa89a 0%, #f6f4ed 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffa89a', endColorstr='#00f6f4ed', GradientType=0); /* IE6-9 */
+  }
+
+  .theme-park {
+    padding: 50px 10px 25px 10px;
+    .park-name {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: inherit;
+      span {
+        font-size: 26px;
+        margin-left: 5px;
+        font-family: "Helvetica Neue Light";
+        color: $medium-title-grey;
+      }
+      a {
+        font-size: 22px;
+        float: right;
+        padding-right:15px;
+        font-family: "Helvetica Neue Light";
+        color: $link-blue;
+      }
+      .color-white {
+        color: white;
+      }
+    }
+
+    .one-product {
+      display: inline-block;
+      vertical-align: top;
+      width: 240px;
+      margin-right: 10px;
+      .product-block {
+        height: 210px;
+        border-radius: 10px;
+        position: relative;
+        display: block;
+        &:hover .product-mask {
+          display: block \0;
+          opacity: 1;
+        }
+        .product-cover {
+          border-radius: 10px;
+        }
+        .product-info {
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          height: 60px;
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          padding: 0px 10px;
+          color: white;
+          font-size: 16px;
+          line-height: 20px;
+          overflow: hidden;
+          background: -moz-linear-gradient(top, transparent 0%, #000000 100%); /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-start(0%, transparent), color-stop(100%, #000)); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top, transparent 0%, #000 100%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top, transparent 0%, #000 100%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(top, transparent 0%, #000 100%); /* IE10+ */
+          background: linear-gradient(to bottom, transparent 0%, #000 100%); /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ff000000', GradientType=0); /* IE6-9 */
+        }
+        .product-price {
+          position: absolute;
+          bottom: 70px;
+          right: 0px;
+          background: url(../images/activities/kidadult/price-mark.png);
+          width: 127px;
+          height: 27px;
+          color: white;
+          text-align: right;
+          padding: 3px 10px 3px 15px;
+          .original-price {
+            text-decoration: line-through;
+          }
+        }
+        .product-mask {
+          transition: 0.3s;
+          position: absolute;
+          top: 0px;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          border-radius: 10px;
+          opacity: 0;
+          display: none \0;
+          z-index: 1;
+          @include bg-rgba(0, 0, 0, 0.7);
+          .mask-top {
+            text-align: center;
+            padding: 10px 20px 0px 20px;
+            .qr-code {
+              width: 110px;
+              margin: 0 auto;
+            }
+            .unionPay-logo {
+              width: 140px;
+              display: block;
+              margin: 5px auto;
+            }
+            .saved-price {
+              display: inline-block;
+              vertical-align: middle;
+              color: #ff0;
+              font-size: 18px;
+              margin-left: 10px;
+            }
+          }
+
+          .kidadult-intro {
+            background: url(../images/activities/kidadult/price-intro.png) no-repeat center center;
+            height: 30px;
+            width: 166px;
+            margin: 0px auto;
+          }
+          .carnival-intro {
+            background: url(../images/activities/carnival-11.11/price-intro.png) no-repeat center center;
+            height: 27px;
+            width: 221px;
+            margin: 0px auto;
+          }
+        }
+      }
+
+      .product-location {
+        margin: 10px 5px 20px 5px;
+        color: inherit;
+        i {
+          color: #6db381;
+          font-size: 14px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    position: fixed;
+    right: 0px;
+    top: 5%;
+    z-index: 1000;
+    .side-top {
+      background: url(../images/activities/carnival-11.11/nav-top.png) no-repeat center center;
+      width: 228px;
+      height: 109px;
+    }
+    .nav-content {
+      width: 130px;
+      background-color: #da3637;
+      margin-left: 50px;
+      img {
+        width: 110%;
+        margin-left: -14px;
+        cursor: pointer;
+      }
+    }
+    .nav-content-shopping {
+      width: 130px;
+      background-color: #fccab6;
+      margin-left: 50px;
+      img {
+        width: 110%;
+        margin-left: -14px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.hitour-guarantee {
+  background: $bg-grey;
+  .section-title {
+    text-align: center;
+    font-family: STFangSong, FangSong;
+    font-weight: normal;
+    h1 {
+      @include h1;
+      margin-top: 65px - $h1-offset;
+      margin-bottom: 0;
+      font-weight: normal;
+    }
+    h2 {
+      @include h2;
+      margin-top: 32px - $h1-offset - $h2-offset;
+      font-weight: normal;
+      margin-bottom: 55px - $h2-offset;
+    }
+  }
+  .section-content {
+    font-size: 0;
+    margin-bottom: 60px;
+    .mark {
+      color: $medium-title-grey;
+      margin: 0 12px 0 0;
+      font-size: 90px;
+      line-height: 100%;
+      @include inline-block;
+    }
+    .detail {
+      @include h4;
+      @include inline-block;
+      .guarantee-title {
+        color: $deep-green;
+      }
+    }
+  }
+}

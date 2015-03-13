@@ -1,0 +1,262 @@
+@charset "UTF-8";
+p {
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+.none {
+  display: none; }
+
+.price-font {
+  font-family: SimHei, "华文细黑", "STHeiti", Helvetica, "微软雅黑", "Microsoft YaHei", Arial, sans-serif; }
+
+.no-scroll {
+  overflow: hidden; }
+
+.kid-adult {
+  font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .kid-adult .activity-header {
+    height: 920px; }
+  .kid-adult .kidadult-image {
+    background: url(../images/activities/kidadult/activity-header.jpg) no-repeat center center; }
+  .kid-adult .carnival-image {
+    background: url(../images/activities/carnival-11.11/activity-header.jpg) no-repeat center center; }
+  .kid-adult .delicated-360header {
+    background: url(../images/activities/carnival-11.11/activity360-header.jpg) no-repeat center center; }
+  .kid-adult .shopping-image {
+    background: url(../images/activities/shopping/activity-header.jpg) no-repeat center center; }
+  .kid-adult .shopping-delicated-360header {
+    background: url(../images/activities/shopping/activity360-header.jpg) no-repeat center center; }
+  .kid-adult .bg-grey {
+    background-color: #f6f6f6;
+    color: black; }
+  .kid-adult .bg-red {
+    background-color: #da3637;
+    color: white; }
+  .kid-adult .bg-red {
+    background-color: #da3637;
+    color: white; }
+  .kid-adult .bg-light-grey {
+    background-color: #f6f4ed;
+    color: black; }
+  .kid-adult .bg-white {
+    background-color: white;
+    color: black; }
+  .kid-adult .bg-linear-gradient {
+    background: -moz-linear-gradient(top, #f09b5b 0%, #f6f4ed 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-start(0%, #f09b5b), color-stop(100%, #f6f4ed));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f09b5b 0%, #f6f4ed 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f09b5b 0%, #f6f4ed 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f09b5b 0%, #f6f4ed 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #f09b5b 0%, #f6f4ed 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00f09b5b', endColorstr='#00f6f4ed', GradientType=0);
+    /* IE6-9 */ }
+  .kid-adult .bg-linear-gradient-shopping {
+    background: -moz-linear-gradient(top, #ffa89a 0%, #f6f4ed 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-start(0%, #ffa89a), color-stop(100%, #f6f4ed));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffa89a 0%, #f6f4ed 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffa89a 0%, #f6f4ed 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffa89a 0%, #f6f4ed 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #ffa89a 0%, #f6f4ed 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffa89a', endColorstr='#00f6f4ed', GradientType=0);
+    /* IE6-9 */ }
+  .kid-adult .theme-park {
+    padding: 50px 10px 25px 10px; }
+    .kid-adult .theme-park .park-name {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: inherit; }
+      .kid-adult .theme-park .park-name span {
+        font-size: 26px;
+        margin-left: 5px;
+        font-family: "Helvetica Neue Light";
+        color: #737373; }
+      .kid-adult .theme-park .park-name a {
+        font-size: 22px;
+        float: right;
+        padding-right: 15px;
+        font-family: "Helvetica Neue Light";
+        color: #0088ff; }
+      .kid-adult .theme-park .park-name .color-white {
+        color: white; }
+    .kid-adult .theme-park .one-product {
+      display: inline-block;
+      vertical-align: top;
+      width: 240px;
+      margin-right: 10px; }
+      .kid-adult .theme-park .one-product .product-block {
+        height: 210px;
+        border-radius: 10px;
+        position: relative;
+        display: block; }
+        .kid-adult .theme-park .one-product .product-block:hover .product-mask {
+          display: block \0;
+          opacity: 1; }
+        .kid-adult .theme-park .one-product .product-block .product-cover {
+          border-radius: 10px; }
+        .kid-adult .theme-park .one-product .product-block .product-info {
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          height: 60px;
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          padding: 0px 10px;
+          color: white;
+          font-size: 16px;
+          line-height: 20px;
+          overflow: hidden;
+          background: -moz-linear-gradient(top, transparent 0%, #000000 100%);
+          /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-start(0%, transparent), color-stop(100%, #000));
+          /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top, transparent 0%, #000 100%);
+          /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top, transparent 0%, #000 100%);
+          /* Opera 11.10+ */
+          background: -ms-linear-gradient(top, transparent 0%, #000 100%);
+          /* IE10+ */
+          background: linear-gradient(to bottom, transparent 0%, #000 100%);
+          /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ff000000', GradientType=0);
+          /* IE6-9 */ }
+        .kid-adult .theme-park .one-product .product-block .product-price {
+          position: absolute;
+          bottom: 70px;
+          right: 0px;
+          background: url(../images/activities/kidadult/price-mark.png);
+          width: 127px;
+          height: 27px;
+          color: white;
+          text-align: right;
+          padding: 3px 10px 3px 15px; }
+          .kid-adult .theme-park .one-product .product-block .product-price .original-price {
+            text-decoration: line-through; }
+        .kid-adult .theme-park .one-product .product-block .product-mask {
+          transition: 0.3s;
+          position: absolute;
+          top: 0px;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          border-radius: 10px;
+          opacity: 0;
+          display: none \0;
+          z-index: 1;
+          background-color: rgba(0, 0, 0, 0.7);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B3000000',endColorstr='#B3000000'); }
+          .kid-adult .theme-park .one-product .product-block .product-mask .mask-top {
+            text-align: center;
+            padding: 10px 20px 0px 20px; }
+            .kid-adult .theme-park .one-product .product-block .product-mask .mask-top .qr-code {
+              width: 110px;
+              margin: 0 auto; }
+            .kid-adult .theme-park .one-product .product-block .product-mask .mask-top .unionPay-logo {
+              width: 140px;
+              display: block;
+              margin: 5px auto; }
+            .kid-adult .theme-park .one-product .product-block .product-mask .mask-top .saved-price {
+              display: inline-block;
+              vertical-align: middle;
+              color: #ff0;
+              font-size: 18px;
+              margin-left: 10px; }
+          .kid-adult .theme-park .one-product .product-block .product-mask .kidadult-intro {
+            background: url(../images/activities/kidadult/price-intro.png) no-repeat center center;
+            height: 30px;
+            width: 166px;
+            margin: 0px auto; }
+          .kid-adult .theme-park .one-product .product-block .product-mask .carnival-intro {
+            background: url(../images/activities/carnival-11.11/price-intro.png) no-repeat center center;
+            height: 27px;
+            width: 221px;
+            margin: 0px auto; }
+      .kid-adult .theme-park .one-product .product-location {
+        margin: 10px 5px 20px 5px;
+        color: inherit; }
+        .kid-adult .theme-park .one-product .product-location i {
+          color: #6db381;
+          font-size: 14px;
+          margin-right: 5px; }
+  .kid-adult .sidebar {
+    position: fixed;
+    right: 0px;
+    top: 5%;
+    z-index: 1000; }
+    .kid-adult .sidebar .side-top {
+      background: url(../images/activities/carnival-11.11/nav-top.png) no-repeat center center;
+      width: 228px;
+      height: 109px; }
+    .kid-adult .sidebar .nav-content {
+      width: 130px;
+      background-color: #da3637;
+      margin-left: 50px; }
+      .kid-adult .sidebar .nav-content img {
+        width: 110%;
+        margin-left: -14px;
+        cursor: pointer; }
+    .kid-adult .sidebar .nav-content-shopping {
+      width: 130px;
+      background-color: #fccab6;
+      margin-left: 50px; }
+      .kid-adult .sidebar .nav-content-shopping img {
+        width: 110%;
+        margin-left: -14px;
+        cursor: pointer; }
+
+.hitour-guarantee {
+  background: #f6f6f6; }
+  .hitour-guarantee .section-title {
+    text-align: center;
+    font-family: STFangSong, FangSong;
+    font-weight: normal; }
+    .hitour-guarantee .section-title h1 {
+      color: #525252;
+      font-size: 34px;
+      line-height: 40px;
+      margin-top: 62px;
+      margin-bottom: 0;
+      font-weight: normal; }
+    .hitour-guarantee .section-title h2 {
+      color: #525252;
+      font-size: 22px;
+      line-height: 24px;
+      margin-top: 28px;
+      font-weight: normal;
+      margin-bottom: 54px; }
+  .hitour-guarantee .section-content {
+    font-size: 0;
+    margin-bottom: 60px; }
+    .hitour-guarantee .section-content .mark {
+      color: #737373;
+      margin: 0 12px 0 0;
+      font-size: 90px;
+      line-height: 100%;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top; }
+    .hitour-guarantee .section-content .detail {
+      color: #808080;
+      font-size: 16px;
+      line-height: 24px;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top; }
+      .hitour-guarantee .section-content .detail .guarantee-title {
+        color: #6db381; }

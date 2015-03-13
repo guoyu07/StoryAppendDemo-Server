@@ -1,0 +1,28 @@
+.product-notice {
+    .rule-table {
+        tr {
+            border-top : 1px solid @color-lite;
+            &:first-child {
+                border-top : 0;
+            }
+        }
+        td:first-child {
+            width         : 180px;
+            border-right  : 1px solid @color-lite;
+            padding-right : 30px;
+        }
+    }
+    .input-group.input-dropdown.inline, .inline-input.redeem-datepicker {
+        display        : inline-block;
+        vertical-align : middle;
+    }
+    .input-group.input-dropdown.inline {
+        width : 200px;
+        .form-control {
+            width : 90px;
+        }
+    }
+    .inline-input.redeem-datepicker {
+        width : 250px;
+    }
+}

@@ -1,0 +1,148 @@
+@import "common";
+.main-wrap{
+  background: #fff;
+}
+.country-cover-ctn {
+  position: relative;
+  .img-ctn {
+    height: 236px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #000;
+  }
+  .country-name-ctn {
+    position: absolute;
+    bottom: 55px;
+    width: 1000px;
+    margin-left: -500px;
+    left: 50%;
+    text-align: left;
+    text-shadow: 1px 1px 15px #000,2px 2px 15px #000;
+
+  }
+
+  .country-cn-name {
+    font-size: 58px;
+    color: #fff;
+    margin-right: 12px;
+    vertical-align: bottom;
+  }
+  .country-en-name {
+    color: #fff;
+    font-family: "helvetica_neue_thin";
+    font-size: 44px;
+    vertical-align: bottom;
+
+  }
+
+}
+.nav-ctn{
+  @include bg-rgba(0,0,0,0.4);
+}
+nav {
+  width: 1000px;
+  margin: 206px auto 0px auto;
+  color: #fff;
+
+  a {
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+  }
+  a:hover {
+    border-bottom: 1px solid #fff;
+    text-decoration: none;
+    color:#fff;
+  }
+  .sep {
+    margin: 0 8px;
+  }
+
+}
+
+.group-ctn {
+
+  .group-title {
+    margin-bottom: 28px;
+    font-size: 0;
+    margin-top: 30px;
+    .group-cover{
+      @include inline-block;
+      width: 170px;
+      height: 124px;
+      background-repeat:  no-repeat;
+      background-position: left bottom;
+      margin-left:10px;
+
+
+    }
+    .group-info{
+      @include inline-block;
+      width: 600px;
+
+      .group-name {
+        font-size: 30px;
+        color: #000;
+        margin-bottom: 12px;
+        margin-top: 7px;
+
+      }
+      .group-desc {
+        font-size: 14px;
+
+      }
+    }
+
+  }
+}
+
+.group-list{
+
+  .city{
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    height: 212px;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 22px;
+    .city-name-zone {
+      overflow: hidden;
+      height: 100%;
+      width:100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../images/home/circle_shadow_large.png");
+      .city-name{
+        font-family: "Microsoft Yahei";
+        font-size: 22px;
+        color:white;
+        margin-top:70px;
+        text-shadow: 0px 1px 8px rgba(0,0,0,0.5);
+      }
+      .city-en-name{
+        font-family: "Helvetica Neue";
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 7px;
+        color:white;
+      }
+    }
+
+    .cover-ctn{
+      height:212px;
+    }
+    &:hover{
+      text-decoration: none;
+      color:#000;
+    }
+  }
+}
+.city-list{
+  margin-top:40px;
+}

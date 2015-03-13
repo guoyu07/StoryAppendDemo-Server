@@ -1,0 +1,1 @@
+<script src="themes/admin/views/admin/supplier/javascripts/supplierGridCtrl.js"></script>

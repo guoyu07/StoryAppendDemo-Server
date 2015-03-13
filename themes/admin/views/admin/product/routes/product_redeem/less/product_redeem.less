@@ -1,0 +1,150 @@
+.product-redeem {
+    .redeem-section {
+        padding : 30px 12px 40px 28px;
+    }
+    .place-text {
+        padding-left : 0;
+    }
+    .place-radio {
+        margin-top  : 18px;
+        margin-left : -41px;
+    }
+    .album-text {
+        line-height   : 32px;
+        margin-bottom : 11px;
+    }
+    .special-block {
+        margin-top : 20px;
+    }
+    .link-album {
+        .form-group {
+            padding-left : 0px;
+        }
+        .input-icon {
+            line-height : 32px;
+            &:before {
+                color : @brand-secondary;
+            }
+        }
+        .btn {
+            line-height : 18px;
+        }
+        input, .btn {
+            height : 36px;
+        }
+    }
+    .tags-input-add {
+        border-radius      : 3px;
+        color              : #fff;
+        cursor             : pointer;
+        display            : inline-block;
+        line-height        : 1;
+        margin-bottom      : 5px;
+        padding            : 7px 9px;
+        vertical-align     : middle;
+        -webkit-transition : 0.25s linear;
+        transition         : 0.25s linear;
+        outline            : none;
+        font-size          : 11px;
+        background         : #34495e;
+        &:hover {
+            color            : #34495e;
+            background-color : @white;
+        }
+        &:before {
+        }
+    }
+    .input-check-btn {
+        position         : absolute;
+        top              : 2px;
+        right            : 12px;
+        line-height      : 32px;
+        font-weight      : bold;
+        font-size        : 20px;
+        color            : #b2bcc5;
+        background-color : #fff;
+        padding          : 0 12px 0 0;
+        border-radius    : 6px;
+        vertical-align   : middle;
+    }
+    .btn-sharp {
+        color         : #fff;
+        background    : #34495e;
+        border-radius : 0px;
+    }
+    .one-location-group {
+        .input {
+            float         : left;
+            width         : 35%;
+            height        : 36px;
+            border-radius : 0px;
+        }
+        .group-name {
+            float         : left;
+            width         : 35%;
+            height        : 36px;
+            border-radius : 0px;
+        }
+        .group-title {
+            float         : left;
+            padding-right : 45px;
+        }
+    }
+    .one-location-group-selection {
+        padding    : 20px;
+        margin     : 20px 0;
+        border     : 1px solid #c2c8ce;
+        background : #f5f6f7;
+        .one-criteria.criteria-with-x {
+            margin           : 0 10px 10px 0;
+            color            : @white;
+            font-size        : 12px;
+            padding          : 10px 15px;
+            background-color : #34495e;
+            border-radius    : 0px;
+            &:after {
+                color        : @white;
+                content      : "X";
+                line-height  : 7px;
+                padding-left : 5px;
+            }
+            &:hover {
+                background-color : #415b76;
+            }
+        }
+        .one-criteria.criteria-with-x.checked {
+            margin           : 0 10px 10px 0;
+            color            : #838383;
+            background-color : #ebedee;
+            &:after {
+                content : '';
+            }
+            &:hover {
+                background-color : #c2c8ce;
+            }
+        }
+    }
+    .redeem-place-table {
+        width: 680px;
+        border: 1px solid #c5c5c5;
+        .header {
+            border-bottom: 1px solid #c5c5c5;
+            th{
+                text-align: center;
+                font-weight: normal;
+                padding: 10px 0px;
+                width: 300px;
+                border-right: 1px solid #c5c5c5;
+            }
+        }
+        .body {
+            border-bottom: 1px solid #c5c5c5;
+            td {
+                border-right: 1px solid #c5c5c5;
+                padding: 5px 10px;
+                font-size: 16px;
+                color: #787878;
+            }
+        }
+    }
+}

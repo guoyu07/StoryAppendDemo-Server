@@ -1,0 +1,71 @@
+@charset "UTF-8";
+p {
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+.none {
+  display: none; }
+
+.price-font {
+  font-family: SimHei, "华文细黑", "STHeiti", Helvetica, "微软雅黑", "Microsoft YaHei", Arial, sans-serif; }
+
+.no-scroll {
+  overflow: hidden; }
+
+body {
+  background: #ededed; }
+
+.dialog-zone {
+  width: 785px;
+  height: 380px;
+  margin: 145px auto;
+  background: white; }
+  .dialog-zone .dialog-left, .dialog-zone .dialog-right {
+    width: 50%;
+    float: left;
+    height: 100%; }
+
+.dialog-left {
+  border: 0px solid white; }
+
+.dialog-right {
+  text-align: center;
+  padding-top: 30px; }
+  .dialog-right i {
+    font-size: 85px;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px; }
+  .dialog-right .success-icon {
+    color: #6db381;
+    background-color: white; }
+  .dialog-right .failure-icon {
+    color: #ff6600;
+    background-color: white; }
+  .dialog-right .notification-title {
+    margin-top: 30px;
+    font-size: 34px;
+    color: black;
+    margin-bottom: 25px;
+    padding-bottom: 0px;
+    padding-top: 0px; }
+  .dialog-right .failure-content {
+    text-align: left;
+    margin-left: 35px;
+    margin-right: 35px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #525252;
+    font-size: 14px; }
+  .dialog-right .introduction {
+    color: black;
+    font-size: 14px;
+    margin-top: 90px; }
+  .dialog-right a {
+    color: #0088ff;
+    cursor: pointer; }
+
+.loading-mask {
+  display: none; }

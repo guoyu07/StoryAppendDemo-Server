@@ -1,0 +1,107 @@
+.product-price {
+    .plan-list.table {
+        .invalid {
+            color: @red;
+        }
+        .span-border {
+            border-right: 1px solid @gray;
+            &.frequency {
+                color: @peter-river;
+            }
+        }
+    }
+    .other-plans-list {
+        .plan-action {
+            display: none;
+        }
+    }
+
+    .one-tour-operation {
+        border        : 1px solid @beige;
+        padding       : @grid-height / 2 @grid-height;
+        position      : relative;
+        background    : @bg-lite;
+        margin-bottom : @grid-height;
+        .section-head {
+            border-bottom : 1px solid @blue-grey;
+            height        : 45px;
+            margin-bottom : 10px;
+            label {
+                font-size   : 16px;
+                font-weight : bolder;
+            }
+        }
+        input {
+            padding : 0 5px;
+        }
+        .input-section {
+            border     : 0;
+            margin-top : 20px;
+            h4 {
+                font-size   : 16px;
+                font-weight : bold;
+            }
+        }
+        .del-btn {
+            top         : 0;
+            right       : -34px;
+            color       : @white;
+            width       : 34px;
+            height      : 34px;
+            cursor      : pointer;
+            position    : absolute;
+            background  : @brand-primary;
+            line-height : 32px;
+        }
+        .price-sale-range {
+            border-bottom  : 1px solid @beige;
+            padding-bottom : 10px;
+            margin-top     : 10px;
+            label {
+                line-height : 30px;
+                margin-left : 30px;
+            }
+            .input-group.button-select {
+                width : auto;
+                &.range-or-single {
+                    .input-wrapper {
+                        border-radius : 4px;
+                    }
+                }
+            }
+        }
+        .text-emphasis {
+            font-weight : bold;
+        }
+
+        .quickdate {
+            min-width : 0px;
+            width     : 100%;
+        }
+    }
+    .departure-point {
+        .upload-holder {
+            display: none;
+        }
+        .one-block {
+            .section-head {
+                height: auto;
+                padding: 10px 0;
+                text-align: center;
+                background: @bg-lite;
+                border-bottom: 1px solid @gray;
+            }
+            .section-body {
+                padding: 0;
+                overflow: visible;
+                margin-bottom: -1px;
+            }
+            .section-row {
+                border-bottom: 1px solid @gray;
+            }
+        }
+    }
+
+    @import "../modules/sale_attribute/less/sale_attribute";
+    @import "../modules/special_code/less/special_code";
+}

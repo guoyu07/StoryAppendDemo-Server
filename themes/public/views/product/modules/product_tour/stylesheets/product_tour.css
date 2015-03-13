@@ -1,0 +1,157 @@
+.product-tour {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 50px; }
+  .product-tour .tour-brief-ctn {
+    padding: 0 30px;
+    overflow: hidden;
+    zoom: 1; }
+  .product-tour .brief-img {
+    float: left;
+    text-align: center;
+    width: 199px;
+    font-size: 16px;
+    color: #333; }
+    .product-tour .brief-img p {
+      line-height: 2; }
+    .product-tour .brief-img img {
+      width: 124px;
+      height: 124px;
+      border-radius: 50%; }
+  .product-tour .split-decoration {
+    float: left;
+    width: 1px;
+    background: #eee;
+    height: 100px;
+    margin-top: 20px; }
+  .product-tour .brief-ctn {
+    float: left;
+    width: 740px;
+    padding: 0 40px; }
+  .product-tour .brief-title {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 10px; }
+  .product-tour .brief-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    display: table-cell;
+    vertical-align: middle;
+    min-height: 100px; }
+  .product-tour .tour-schedule-map {
+    margin-top: 40px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #eee; }
+  .product-tour .tour-intro-ctn {
+    margin-top: 45px;
+    height: 254px;
+    position: relative;
+    border: 1px solid #eee; }
+  .product-tour .tour-intro-img {
+    cursor: pointer;
+    height: 254px;
+    overflow: hidden; }
+  .product-tour .access-btn {
+    background: url("../images/button.png") no-repeat;
+    position: absolute;
+    top: 100px;
+    right: 130px;
+    width: 179px;
+    height: 57px;
+    color: #fff;
+    line-height: 57px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer; }
+    .product-tour .access-btn:hover {
+      background: url("../images/buttonhover.png") no-repeat; }
+  .product-tour .tour-outline {
+    margin: 60px 0;
+    overflow: hidden; }
+  .product-tour .outline-title {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 50px; }
+    .product-tour .outline-title:before {
+      content: '';
+      width: 92px;
+      height: 6px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      margin-right: 25px;
+      display: inline-block;
+      vertical-align: middle; }
+    .product-tour .outline-title:after {
+      content: '';
+      width: 92px;
+      height: 6px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 25px; }
+  .product-tour .outline-abstract {
+    overflow: hidden;
+    *zoom: 1;
+    font-size: 16px; }
+    .product-tour .outline-abstract ul {
+      position: relative;
+      left: 50%;
+      float: left;
+      list-style: none;
+      padding: 0; }
+    .product-tour .outline-abstract li {
+      float: left;
+      *display: inline;
+      position: relative;
+      right: 50%;
+      padding: 0 60px;
+      height: 100px;
+      border-right: 1px solid #eee; }
+      .product-tour .outline-abstract li.first {
+        padding-left: 0; }
+      .product-tour .outline-abstract li.last {
+        padding-right: 0; }
+    .product-tour .outline-abstract .fix-border {
+      border-right: none; }
+  .product-tour .abstract-title {
+    color: #6db381;
+    font-weight: bold;
+    margin-bottom: 12px; }
+  .product-tour .abstract-head {
+    font-size: 50px;
+    padding: 0 8px 0 4px; }
+  .product-tour .outline-detail {
+    margin: 30px 0; }
+    .product-tour .outline-detail table {
+      width: 100%;
+      border: 1px solid #eee; }
+      .product-tour .outline-detail table thead tr th {
+        background: #ecf6ee;
+        height: 56px;
+        line-height: 56px; }
+      .product-tour .outline-detail table tbody tr {
+        border-top: 1px solid #eee; }
+        .product-tour .outline-detail table tbody tr td {
+          padding: 10px;
+          color: #666; }
+        .product-tour .outline-detail table tbody tr ul {
+          list-style: inside; }
+  .product-tour .detail-highlights {
+    margin: 0;
+    padding: 0 10px; }
+  .product-tour .show-detail-btn {
+    float: right;
+    margin-right: 40px;
+    font-size: 18px;
+    color: #6db381;
+    cursor: pointer;
+    text-decoration: underline; }
+  .product-tour .day-row {
+    transition: background-color 0.1s; }
+    .product-tour .day-row:hover {
+      cursor: pointer;
+      background-color: #72c5b3; }
+      .product-tour .day-row:hover td {
+        color: #fff; }

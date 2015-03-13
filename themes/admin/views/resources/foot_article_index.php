@@ -1,0 +1,1 @@
+<script src="themes/admin/views/admin/article/javascripts/articleGridCtrl.js"></script>

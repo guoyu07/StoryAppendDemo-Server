@@ -1,0 +1,117 @@
+<div id="full-mask" ms-click="closeMask()" ms-controller="bundleCtrl">
+    <div class="modal-close-btn"><i class="icon-x"></i></div>
+</div>
+<div id="bundle-detail" class="modal" ms-controller="bundleCtrl">
+
+    <div class="modal-loading-mask">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- 头部 一般商品 (!=7) -->
+    <div class="detail-header" ms-if="bundle.type != 7">
+        <!--  标题行  -->
+        <h2>
+            <div class="cn-name">{{ bundle.description.name }}</div>
+            <div class="en-name" ms-show="bundle.description.en_name">{{ bundle.description.en_name }}</div>
+        </h2>
+
+        <!--  价格行  -->
+        <div class="price-row">
+            <span class="orgi-price">市场价<em class="price-font">&yen;{{ bundle.show_prices.orig_price }}</em></span>
+            <span class="hi-price">玩途价<em class="price-font">&yen;{{ bundle.show_prices.price }}</em></span>
+            <span class="bundle-price" ms-if="bundle.bundle_info && bundle.bundle_info.group_type != 2">独享特惠
+                <em class="price-font">
+                    <i>再减</i>
+                    <i ms-if="bundle.bundle_info.discount_type == 'F'">&yen;</i>{{ bundle.bundle_info.discount_amount }}
+                    <i ms-if="bundle.bundle_info.discount_type == 'P'">%</i>
+                </em>
+            </span>
+        </div>
+        <a class="go-more-btn" ms-visible="bundle.status == 3" ms-href="{{ bundle.link_url }}/?from=side" target="_blank">了解更多</a>
+    </div>
+    <!-- 头部 酒店商品 （==7） -->
+    <div class="bundle-hotel-header" ms-if="bundle.type == 7">
+        <?php include(dirname(__FILE__) . '/../bundle/_header-hotel.html'); ?>
+    </div>
+
+    <div class="detail-content">
+
+        <!-- 内容 酒店地理位置 (==7) -->
+        <div class="bundle-hotel-map" ms-visible="bundle.type == 7">
+            <?php include(dirname(__FILE__) . '/../bundle/_content-hotel-map.html'); ?>
+        </div>
+
+        <!-- 内容 推荐理由 (==7) -->
+        <div class="bundle-highlight" ms-if="bundle.type == 7">
+            <?php include(dirname(__FILE__) . '/../bundle/_content-highlight.html'); ?>
+        </div>
+
+        <!-- 内容  服务包含 (!=7) -->
+        <div class="service-include section-ctn wrap" ms-html="bundle.description.service_include"
+             ms-visible="bundle.type != 7"></div>
+
+        <!-- 内容 酒店房型 -->
+        <div class="bundle-hotel-room" ms-if="bundle.type == 7">
+            <?php include(dirname(__FILE__) . '/../bundle/_content-hotel-room.html'); ?>
+        </div>
+
+        <!-- 内容 酒店设施+酒店政策 (==7) -->
+        <div class="bundle-hotel-notice" ms-if="bundle.type == 7">
+            <?php include(dirname(__FILE__) . '/../bundle/_content-hotel-notice.html'); ?>
+        </div>
+
+        <!--  通票包含景点  -->
+        <div class="scenes-ctn section-ctn wrap" ms-if="bundle.type == 3">
+            <h2>通票所含精华景点及体验</h2>
+            <div class="group-wrap" ms-repeat-gp="bundle.landinfo_groups">
+                <div class="scene" ms-repeat-el="gp">
+                    <img ms-src="{{el.image_url}}?imageView2/1/w/458/h/205" alt="" />
+                    <div class="scene-info">
+                        <div class="scene-name-ctn">
+                            <h3>{{ el.name }}</h3>
+                            <h4>{{ el.en_name }}</h4>
+                        </div>
+                        <div class="seq">{{ $outer.$index | seq($outer.gp.length) }}</div>
+                        <p class="scene-summary">{{ el.pass_benefit }}</p>
+
+                        <p class="scene-desc">{{ el.reason }}</p>
+                    </div>
+                </div>
+                <div class="linked-circle" ms-if="gp.length>1">2选1</div>
+            </div>
+        </div>
+
+        <!--  简单图文  -->
+        <div class="simple-tour-ctn section-ctn wrap" ms-if="bundle.tour_plan && bundle.tour_plan.total_days == 0">
+            <h2>图文介绍</h2>
+            <div class="tour-content" ms-repeat-el="bundle.tour_plan.groups">
+                <div class="tour-content-ctn" ms-repeat-ct="el.items">
+                    <div class="tour-content-wrap">
+                        <h4 ms-visible="ct.title">{{ct.title}}</h4>
+                        <img ms-src="{{ct.image_url}}" alt="" onerror="this.parentNode.removeChild(this);" />
+
+                        <p ms-if="ct.description">{{ct.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--  单日行程  -->
+        <div class="tour-ctn section-ctn wrap" ms-if="bundle.tour_plan && bundle.tour_plan.total_days == 1">
+            <div class="day-tour-ctn">
+                <div class="one-time" ms-repeat-el="bundle.tour_plan.groups">
+                    <i class="x-clock"></i>
+                    <div class="time-time" ms-visible="el.time">{{el.time}}</div>
+                    <div class="time-head">{{el.title}}</div>
+                    <div class="time-content">
+                        <div class="time-content-wrap" ms-repeat-ct="el.items">
+                            <img ms-src="{{ct.image_url}}" alt="" onerror="this.parentNode.removeChild(this);" />
+                            <h4>{{ct.title}}</h4>
+                            <p>{{ct.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

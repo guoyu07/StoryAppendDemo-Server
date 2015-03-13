@@ -1,0 +1,63 @@
+@import "common";
+@import "_product-list";
+
+.promotion {
+  font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  .header {
+    background-color: #f7f7f7;
+    .banner {
+      height: 400px;
+      background-position: center center;
+      background-size: auto 100%;
+    }
+    .intro {
+      padding: 50px 0 55px;
+      text-align: center;
+      h1 {
+        font-size: 32px;
+        letter-spacing: 2px;
+      }
+      .desc {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #777;
+      }
+    }
+  }
+  .groups-ctn {
+    .group {
+      padding: 50px 0 0;
+      background-color: #fff;
+      &:nth-child(even) {
+        background-color: #f7f7f7;
+      }
+      .title {
+        color: #555;
+        .clearfix {
+          h2 {
+            display: inline;
+            font-size: 36px;
+            line-height: 36px;
+          }
+          .more-link {
+            float: right;
+            color: $link-blue;
+            font-size: 14px;
+            line-height: 36px;
+          }
+        }
+        .desc {
+          margin-top: 4px;
+          font-size: 16px;
+          width: 80%;
+        }
+      }
+    }
+  }
+}

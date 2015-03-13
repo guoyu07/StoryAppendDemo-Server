@@ -1,0 +1,622 @@
+@import "../../../scss/common";
+@import "../../../scss/_skeleton";
+
+.page-country-extra {
+    font-family             : "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "华文细黑", "STHeiti", "微软雅黑", "Microsoft YaHei", SimHei, sans-serif;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+/* layout */
+.country-extra-header {
+    position            : relative;
+    height              : 220px;
+    background-color    : #000;
+    background-repeat   : no-repeat;
+    background-position : center bottom;
+    .wrap {
+        position : relative;
+    }
+}
+
+/* box */
+.country-extra-name {
+    position    : absolute;
+    top         : 100px;
+    left        : 0;
+    color       : #fff;
+    font-weight : 200;
+    text-shadow : 1px 1px 5px #000;
+    .cn-name {
+        display     : inline-block;
+        font-size   : 50px;
+        line-height : 1;
+    }
+    .en-name {
+        display     : inline-block;
+        margin-left : 5px;
+        font-size   : 30px;
+        line-height : 1;
+    }
+}
+
+.country-extra-nav {
+    position    : absolute;
+    bottom      : 0;
+    width       : 100%;
+    height      : 50px;
+    line-height : 50px;
+    @include bg-rgba(0, 0, 0, 0.5);
+    transition  : all 0.2s;
+    font-weight : bold;
+    &.fixed {
+        z-index  : 999;
+        position : fixed;
+        top      : 0;
+        @include bg-rgba(0, 0, 0, 0.8);
+    }
+    .secondary {
+        background    : #fff;
+        border-bottom : 1px solid #c9c9c9;
+        .nav-wrap {
+            margin-left : 0;
+        }
+        .nav-item {
+            color        : #999;
+            height       : 24px;
+            outline      : 0;
+            font-size    : 14px;
+            line-height  : 24px;
+            font-weight  : normal;
+            border-right : 1px solid #d7d7d7;
+            &:hover {
+                color : #3ae;
+            }
+            &.border-left {
+                border-left : 1px solid #d7d7d7;
+            }
+        }
+    }
+    &.has-secondary {
+        .nav-item.active {
+            position : relative;
+            &:after {
+                left         : 0;
+                right        : 0;
+                margin-left  : auto;
+                margin-right : auto;
+                bottom       : -12px;
+                width        : 0;
+                height       : 0;
+                content      : '';
+                display      : block;
+                position     : absolute;
+                border-style : solid;
+                border-width : 0 6px 6px 6px;
+                border-color : transparent transparent #fff transparent;
+            }
+        }
+    }
+    .nav-wrap {
+        margin-left : -20px;
+    }
+    .nav-item {
+        display     : inline-block;
+        padding     : 0 20px;
+        line-height : 30px;
+        height      : 30px;
+        color       : #fff;
+        font-size   : 16px;
+        &:hover {
+            color           : #eee;
+            text-decoration : underline;
+            cursor          : pointer;
+        }
+        &.active {
+            color : #6db381;
+        }
+        &.border-left {
+            border-left : 1px solid #aaa;
+        }
+    }
+}
+
+.country-extra-tab-content.has-secondary {
+    padding-top : 50px;
+}
+
+.country-desc-row {
+    padding : 50px 120px;
+    .desc-title {
+        color      : #3ae;
+        text-align : center;
+        font-size  : 30px;
+    }
+    .desc-subtitle {
+        margin-top  : 10px;
+        font-size   : 20px;
+        color       : #222;
+        line-height : 1.8;
+    }
+    .desc-text {
+        font-size   : 16px;
+        line-height : 1.5;
+        color       : #666;
+    }
+}
+
+.group {
+    &.odd {
+        background-color : #eee;
+    }
+    .common-group {
+        padding : 50px 0 40px;
+    }
+    .group-header {
+        padding : 0 5px 10px;
+    }
+    .header-img-col {
+        margin-right : 45px;
+        float        : left;
+        width        : 135px;
+        img {
+            display : block;
+            width   : 100%;
+        }
+    }
+    .header-intro-col {
+        width          : 830px;
+        float          : left;
+        padding-bottom : 20px;
+    }
+    .group-name-row {
+        padding-top   : 10px;
+        border-bottom : 1px solid #ccc;
+    }
+    .group-name {
+        display        : inline-block;
+        font-size      : 28px;
+        line-height    : 1;
+        padding-bottom : 10px;
+        color          : #222;
+        a {
+            text-decoration : none;
+        }
+    }
+    .group-tabs {
+        margin-top   : 10px;
+        padding-left : 5px;
+        line-height  : 16px;
+        height       : 16px;
+    }
+    .group-tab {
+        display         : inline-block;
+        vertical-align  : top;
+        padding         : 0 15px;
+        color           : #3ae;
+        cursor          : pointer;
+        font-size       : 16px;
+        text-decoration : underline;
+        border-right    : 1px solid #ccc;
+        &:hover {
+            color           : #3be;
+            text-decoration : underline;
+        }
+        &.active {
+            color           : #666;
+            text-decoration : none;
+        }
+        &.border-left {
+            border-left : 1px solid #ccc;
+        }
+    }
+    .group-desc {
+        margin-top    : 20px;
+        padding-right : 50px;
+        color         : #666;
+    }
+    .group-subtitle {
+        margin-left : 20px;
+        color       : #888;
+    }
+    .group-content {
+        margin-top : 10px;
+    }
+    .more-row {
+        text-align : right;
+    }
+    .go-city-link {
+        display : inline-block;
+        padding : 0 8px;
+        span {
+            font-size : 12px;
+        }
+    }
+}
+
+.hi-carousel.group-wrap {
+    .carousel-list {
+        height  : auto;
+        padding : 10px 0;
+    }
+    .carousel-item {
+        background-color : transparent;
+    }
+    .to-prev, .to-next {
+        font-size        : 60px;
+        background-color : transparent;
+        color            : #bbb;
+    }
+    .to-prev {
+        left : -55px;
+        &:hover {
+            left : -60px;
+        }
+    }
+    .to-next {
+        right : -55px;
+        &:hover {
+            right : -60px;
+        }
+    }
+    .item-wrap {
+        position         : relative;
+        border           : 1px solid #e8e8e8;
+        background-color : #fff;
+    }
+    .image-cover {
+        position    : absolute;
+        top         : 0;
+        left        : 0;
+        right       : 0;
+        bottom      : 0;
+        color       : #fff;
+        font-weight : bold;
+    }
+    .overflow-hidden {
+        overflow : hidden;
+        position : relative;
+        height   : 100%;
+    }
+}
+
+.hi-carousel.tour-group {
+    height : 412px;
+    .tour-item {
+        width       : 340px;
+        height      : auto;
+        padding     : 0 5px;
+        white-space : normal;
+    }
+    .item-wrap {
+        transition : all 0.2s;
+        &:hover {
+            margin-top : -2px;
+            box-shadow : 0 2px 10px #ddd;
+        }
+    }
+    .product-image-row {
+        display  : block;
+        position : relative;
+        height   : 280px;
+        overflow : hidden;
+        img {
+            width : 100%;
+        }
+    }
+    .image-cover {
+        background : url("../../../images/country_tour_cover_bg.png") repeat-x center bottom;
+    }
+    .cover-bottom {
+        position : absolute;
+        bottom   : 8px;
+    }
+    .tour-days {
+        width       : 78px;
+        font-size   : 16px;
+        line-height : 36px;
+        text-align  : center;
+        span {
+            font-size      : 26px;
+            vertical-align : bottom;
+        }
+    }
+    .tour-meet {
+        width       : 250px;
+        line-height : 18px;
+        height      : 36px;
+        font-size   : 14px;
+        overflow    : hidden;
+        span {
+            padding-left : 12px;
+            border-left  : 1px solid #bbb;
+        }
+    }
+    .product-intro-row {
+        position : relative;
+        height   : 110px;
+        padding  : 12px 15px;
+    }
+    .tour-name {
+        line-height : 20px;
+        max-height  : 40px;
+        font-size   : 16px;
+        overflow    : hidden;
+        a {
+            color : #444;
+        }
+    }
+    .tour-season {
+        position  : absolute;
+        left      : 14px;
+        bottom    : 12px;
+        color     : #3ae;
+        font-size : 12px;
+        span {
+            color : #666;
+        }
+    }
+    .tour-price {
+        position    : absolute;
+        bottom      : 12px;
+        right       : 14px;
+        line-height : 1;
+        text-align  : right;
+        line-height : 1;
+        em {
+            font-style : normal;
+        }
+    }
+    .orig-price {
+        color           : #999;
+        font-size       : 12px;
+        text-decoration : line-through;
+        padding         : 0 1px;
+        em {
+            font-size : 14px;
+        }
+    }
+    .now-price {
+        color     : #f60;
+        font-size : 12px;
+        em {
+            vertical-align : -1px;
+            margin-left    : 2px;
+            font-size      : 22px;
+        }
+    }
+}
+
+.hi-carousel.article-group {
+    height : 240px;
+    .article-item {
+        width       : 340px;
+        height      : auto;
+        padding     : 0 5px;
+        white-space : normal;
+    }
+    .item-wrap {
+        border-radius : 6px;
+        overflow      : hidden;
+    }
+    .product-image-row {
+        position : relative;
+        display  : block;
+        height   : 220px;
+        img {
+            position   : absolute;
+            display    : block;
+            top        : 0;
+            left       : 0;
+            width      : 328px;
+            transition : all 0.5s;
+        }
+        &:hover {
+            img {
+                transform         : scale(1.05);
+                -webkit-transform : scale(1.05);
+                -moz-transform    : scale(1.05);
+                -o-transform      : scale(1.05);
+                -ms-transform     : scale(1.05);
+            }
+        }
+    }
+    .image-cover {
+        @include bg-rgba(0, 0, 0, 0.3);
+    }
+    .article-name {
+        padding     : 100px 15px;
+        font-size   : 22px;
+        line-height : 1.2;
+        text-align  : center;
+        text-shadow : 0 1px 3px #000, 0 1px 20px #000;
+    }
+}
+
+.hi-carousel.normal-group {
+    height : 320px;
+    .normal-item {
+        width       : 255px;
+        height      : auto;
+        padding     : 0 5px;
+        white-space : normal;
+    }
+    .item-wrap {
+        border-radius : 3px;
+        overflow      : hidden;
+        transition    : all 0.2s;
+        &:hover {
+            margin-top : -2px;
+            box-shadow : 0 2px 10px #ddd;
+        }
+    }
+    .product-image-row {
+        display : block;
+    }
+    .product-intro-row {
+        position : relative;
+        height   : 98px;
+        padding  : 11px 13px;
+    }
+    .product-name {
+        font-size   : 16px;
+        line-height : 20px;
+        max-height  : 40px;
+        overflow    : hidden;
+        font-weight : normal;
+        a {
+            color : #444;
+        }
+    }
+    .tour-price {
+        position    : absolute;
+        bottom      : 10px;
+        right       : 12px;
+        text-align  : right;
+        line-height : 1;
+        em {
+            font-style : normal;
+        }
+    }
+    .orig-price {
+        display         : inline-block;
+        color           : #888;
+        font-size       : 12px;
+        text-decoration : line-through;
+        padding         : 0 1px;
+        margin-right    : 3px;
+        em {
+            font-size : 14px;
+        }
+    }
+    .now-price {
+        display   : inline-block;
+        color     : #f60;
+        font-size : 12px;
+        em {
+            vertical-align : -1px;
+            margin-left    : 2px;
+            font-size      : 22px;
+        }
+    }
+}
+
+.hi-carousel.city-group {
+    height : 240px;
+    .city-item {
+        width       : 255px;
+        height      : auto;
+        padding     : 0 5px;
+        white-space : normal;
+    }
+    .item-wrap {
+        border-radius : 6px;
+        overflow      : hidden;
+    }
+    .city-image-row {
+        position : relative;
+        display  : block;
+        height   : 220px;
+        img {
+            position   : absolute;
+            display    : block;
+            top        : 0;
+            left       : 0;
+            width      : 243px;
+            transition : all 0.5s;
+        }
+        &:hover {
+            img {
+                transform         : scale(1.05);
+                -webkit-transform : scale(1.05);
+                -moz-transform    : scale(1.05);
+                -o-transform      : scale(1.05);
+                -ms-transform     : scale(1.05);
+            }
+        }
+    }
+    .image-cover {
+        @include bg-rgba(0, 0, 0, 0.2);
+    }
+    .city-name {
+        padding     : 90px 15px;
+        font-size   : 22px;
+        line-height : 1.2;
+        text-align  : center;
+        text-shadow : 0 1px 3px #000, 0 1px 20px #000;
+        span {
+            font-size : 16px;
+            color     : #eee;
+        }
+    }
+}
+
+.banner-group {
+    position : relative;
+    display  : block;
+    height   : 400px;
+    width    : 100%;
+    overflow : hidden;
+    &:hover {
+        .image-cover {
+            @include bg-rgba(0, 0, 0, 0.4);
+        }
+    }
+    .banner-wrap {
+        position            : absolute;
+        top                 : 0;
+        left                : 0;
+        right               : 0;
+        bottom              : 0;
+        background-color    : #000;
+        background-position : center center;
+        background-repeat   : no-repeat;
+        transition          : all 0.5s;
+    }
+    .image-cover {
+        position   : absolute;
+        top        : 0;
+        left       : 0;
+        right      : 0;
+        bottom     : 0;
+        @include bg-rgba(0, 0, 0, 0.2);
+        background : url("../../../images/country_banner_cover_bg.png") repeat-y center center;
+        transition : all 0.2s;
+    }
+    .banner-title {
+        width       : 1020px;
+        margin      : 130px auto 0;
+        padding     : 0 120px;
+        font-size   : 38px;
+        line-height : 50px;
+        height      : 53px;
+        overflow    : hidden;
+        color       : #fff;
+        text-shadow : 0 2px 5px #000, 0 1px 2px #000;
+    }
+    .banner-text {
+        width       : 1020px;
+        margin      : 0 auto;
+        padding     : 0 120px;
+        font-size   : 18px;
+        line-height : 28px;
+        height      : 85px;
+        overflow    : hidden;
+        color       : #fff;
+        text-shadow : 0 2px 5px #000, 0 1px 2px #000;
+    }
+    .banner-btn {
+        width  : 780px;
+        margin : 0 auto;
+    }
+    .btn-text {
+        background-color : rgba(109, 179, 129, 0.9);
+        width            : 145px;
+        height           : 43px;
+        font-size        : 18px;
+        line-height      : 41px;
+        color            : #fff;
+        border-radius    : 25px;
+        text-align       : center;
+    }
+}

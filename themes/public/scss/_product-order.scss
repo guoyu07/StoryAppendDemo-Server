@@ -1,0 +1,458 @@
+.no-border{
+  border: 0 !important;
+}
+
+
+
+
+.order-panel{
+
+  z-index: 100;
+  position: absolute;
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding-top: 20px;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.075);
+  overflow-y:auto;
+  overflow-x:hidden;
+  .input-ctn{
+    width: 950px;
+    margin:0 auto;
+    font-size: 0;
+  }
+  .date-legend{
+    border-top: 1px solid #ccc;
+    padding: 12px 22px 10px 22px;
+    .legend-item {
+      line-height: 18px;
+      display: inline-block;
+      width: 90px;
+    }
+    .buy-rule{
+      margin-top: 5px;
+      color: #6DB381;
+      &:before{
+        font-family: "hitour";
+        content: "\e647";
+        margin-right: 15px;
+        font-size: 18px;
+        position: relative;
+        top: 2px;
+      }
+    }
+    .date-enable{
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      background: #6db381;
+      vertical-align: top;
+      margin-right: 15px;
+    }
+    .date-disable{
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      background-color: #eee;
+      vertical-align: top;
+      margin-right: 15px;
+    }
+  }
+  .input-wrap{
+    @include inline-block();
+    background: #fefefe;
+    cursor: pointer;
+    height: 60px;
+    margin: 0 10px;
+    width: 296px;
+    position: relative;
+    z-index: 20;
+    color:#c5c5c5;
+    &.disabled{
+      border: 1px dashed #c5c5c5 !important;
+    }
+    &.active{
+      border:1px solid #6db381 !important;
+    }
+    &.error{
+      border:1px solid red !important;
+    }
+    &.enable{
+      border:1px solid #c5c5c5;
+      color:#444;
+    }
+    .head-title{
+
+      font-size: 18px;
+      height: 58px;
+      line-height: 58px;
+
+      -webkit-font-smoothing: antialiased;
+      /*transition:0.6s;
+      @include genPrefix(transform-origin,left center);*/
+      &:before{
+        padding: 0 12px;
+        font-size:18px;
+        border-right: 1px solid #ccc;
+        margin-right: 12px;
+      }
+      &.upper{
+       /* color: #666;
+        -webkit-transform:scale(0.8) translateY(-15px);
+        -moz-transform:scale(0.8) translateY(-15px);
+        font-size: 12px\0;
+        top: -15px\0;
+        position: absolute\0;*/
+        font-size:0;
+
+      }
+    }
+
+    i.drop-arrow{
+      font-size: 12px;
+      position: absolute;
+      right: 20px;
+      top: 24px;
+    }
+  }
+  #tour_date{
+    .input-preview{
+      font-size: 20px;
+      position: absolute;
+      top: 17px;
+      left: 53px;
+      font-family: Helvetica_Neue_Thin;
+    }
+  }
+  .quantity-selector{
+    border: 1px solid #6DB381;
+    border-top: 1px solid #ccc;
+    width: 296px;
+    position: absolute;
+    left: -1px;
+    top: 58px;
+  }
+
+  .w-selector{
+    font-size: 14px;
+    position: absolute;
+    left: -1px;
+    top: 58px;
+    width: 296px;
+    background: #FFF;
+    border: 1px solid #6DB381;
+    border-top: 1px solid #ccc;
+    max-height: 300px;
+    overflow: auto;
+    @include genPrefix(transform,translateZ(0));
+    .w-option{
+      padding: 20px;
+      border-bottom: 1px solid #D5D5D5;
+      word-break: break-all;
+      &:hover{
+        color:#6db381;
+      }
+    }
+  }
+  .ticket-ctn{
+    background: #fff;
+    border-bottom: 1px solid #D5D5D5;
+    border-top: 0;
+    padding-left: 47px;
+    position: relative;
+    color: $big-title-grey;
+
+    &>div{
+      display: inline-block;
+      vertical-align: top;
+    }
+    .ticket-type{
+      font-size: 18px;
+      line-height: 70px;
+      width: 150px;
+    }
+    .ticket-range{
+      @include inline-block(middle);
+      font-size: 12px;
+    }
+    .ticket-desc{
+      font-size: 12px;
+      margin-top: -14px;
+      margin-bottom: 15px;
+      color: #6DB381;
+      width:222px;
+    }
+    .num-counter{
+      height: 28px;
+      border: 1px solid #D9D9D9;
+      margin-top: 20px;
+      font-size:0;
+      background: #fff;
+      .reduce{
+        width:22px;
+        @include inline-block;
+        cursor: pointer;
+        text-align: center;
+        border-right: 1px solid #D5D5D5;
+        -webkit-user-select: none;
+        -moz-user-select:none;
+        -webkit-font-smoothing: none;
+        font-size:12px;
+        color: #999;
+        &:hover{
+          color: #6db381;
+        }
+        &:before{
+          font-family: "Hitour";
+          content:'\e644';
+
+          line-height: 26px;
+
+        }
+      }
+      .add{
+        width:22px;
+        text-align: center;
+        @include inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select:none;
+        border-left: 1px solid #D5D5D5;
+        -webkit-font-smoothing: none;
+        font-size:12px;
+        color: #999;
+        &:hover{
+          color: #6db381;
+        }
+        &:before{
+          font-family: "Hitour";
+          content:'\e645';
+
+          line-height: 26px;
+
+        }
+
+      }
+      input{
+        line-height: 20px;
+        width: 26px;
+        border: 0;
+        font-size: 16px;
+        height: 26px;
+        vertical-align: top;
+        outline: none;
+        text-align: center;
+      }
+    }
+
+  }
+
+  .ticket-rule{
+    background: #FFF;
+    height: 0;
+    transition:0.6s;
+    line-height: 53px;
+    border: 1px solid #D9D9D9;
+    border-bottom: 0;
+    border-top: 0;
+    padding-left: 30px;
+    font-size: 14px;
+    overflow: hidden;
+    color: #F60;
+    &.ticket-tips-show{
+      height:53px;
+      border-bottom: 1px solid #d9d9d9;
+    }
+    &:before{
+      font-size: 18px;
+      position: relative;
+      top: 3px;
+      margin-right: 12px;
+    }
+  }
+
+  .quantity {
+    .input-preview{
+      font-size: 14px;
+      position: absolute;
+      font-weight: normal;
+      top: 19px;
+      left: 53px;
+      .ticket-wrap{
+        min-width: 53px;
+        @include inline-block();
+      }
+    }
+  }
+  .departure{
+    .input-preview{
+      font-size: 14px;
+      position: absolute;
+      top: 20px;
+      left: 53px;
+      width: 210px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+
+  }
+  .special-code-ctn{
+    width: 930px;
+    margin: 0 auto;
+    margin-top: 20px;
+    .head-title{
+      margin: 15px 0;
+    }
+    .special-options {
+      .option-item {
+        padding: 0 20px;
+        height: 38px;
+        line-height: 38px;
+        border: 1px solid #c2c2c2;
+        float: left;
+        background-color: #fff;
+        margin: 0 15px 20px 0;
+        &:hover {
+          background-color: #f7f7f7;
+          border-color: #c5c5c5;
+        }
+        &.active {
+          background-color: #6db381;
+          border-color: #64a777;
+          color: #fff;
+          &:before{
+            font-family: "hitour";
+            content: "\e646";
+            margin-right: 15px;
+            position: relative;
+            top: 1px;
+          }
+        }
+      }
+    }
+    .special-wrap{
+      padding:30px 0;
+      border-top: 1px solid #dfdfdf;
+      &>div{
+        @include inline-block(middle);
+      }
+      .special-info{
+        width: 380px;
+        margin-right: 55px;
+        padding-left: 20px;
+        position: relative;
+        p {
+          color: #8d8d8d;
+        }
+        &:before{
+          content: '·';
+          font-size: 30px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          line-height: 22px;
+        }
+        h3{
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+      }
+      .ticket-type-ctn{
+        border-right: 1px solid #EAEAEA;
+        &.single-special{
+          width:660px;
+        }
+        &>div{
+          font-family: Helvetica_Neue_Thin;
+          margin-bottom: 10px;
+        }
+        span{
+          width:100px;
+          @include inline-block(bottom);
+        }
+        strong{
+          font-size: 18px;
+          @include inline-block(bottom);
+          width: 80px;
+          position: relative;
+          top: 1px;
+
+          .rmb:before{
+            font-family: "Hitour";
+            content: "\e617";
+            font-style: normal;
+            font-size: 12px;
+            position: relative;
+            top: -1px;
+          }
+        }
+        em{
+          font-style: normal;
+          width: 90px;
+          @include inline-block(bottom);
+          text-decoration: line-through;
+          .rmb:before{
+            font-family: "Hitour";
+            content: "\e617";
+            font-style: normal;
+            font-size: 12px;
+            position: relative;
+            top: -1px;
+          }
+        }
+      }
+      .buy-wrap{
+
+        margin-left: 46px;
+        text-align: center;
+        width: 120px;
+        .subtotal{
+          font-size: 26px;
+          font-family: Helvetica_Neue_Thin;
+          .rmb:before{
+            font-family: "Hitour";
+            content: "\e617";
+            font-style: normal;
+            font-size: 70%;
+            position: relative;
+            top: -1px;
+          }
+        }
+        .discount{
+          color: #EF6F35;
+          margin-bottom: 8px;
+          margin-left: 5px;
+        }
+        .buy-btn{
+          width: 100px;
+          background: #EF6F35;
+          font-size: 18px;
+          color: #FFF;
+          border: 1px solid #C15227;
+          padding: 5px 0;
+          margin-left: 8px;
+          &:hover{
+            background: #E06832;
+          }
+        }
+      }
+    }
+
+  }
+}
+i.icon-three-bar{
+  padding: 0 12px;
+  position: relative;
+  border-right: 1px solid #ccc;
+  margin-right: 12px;
+  font-size: 16px;
+  line-height: 58px;
+}
+.order-panel.fixed {
+  position: fixed;
+  top: 56px;
+}

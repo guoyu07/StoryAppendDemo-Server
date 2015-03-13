@@ -1,0 +1,130 @@
+@charset "UTF-8";
+.loading-mask {
+  display: none; }
+
+.main-header {
+  display: none; }
+
+.museum-page {
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans GB', 华文细黑, STHeiti, 微软雅黑, 'Microsoft YaHei', SimHei, sans-serif;
+  background-color: #f2f2f2; }
+  .museum-page .head-block {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 755px;
+    display: table;
+    position: absolute;
+    text-align: center;
+    color: #fff; }
+    .museum-page .head-block .slogan-block {
+      width: 1000px;
+      margin: 0 auto;
+      text-align: left; }
+      .museum-page .head-block .slogan-block:hover a {
+        text-decoration: none; }
+    .museum-page .head-block .slogan-text {
+      color: #fff;
+      font-size: 43px;
+      margin-top: 20px;
+      text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5); }
+    .museum-page .head-block .icon-block {
+      margin-top: 85px; }
+    .museum-page .head-block .icon-span {
+      width: 50px;
+      height: 40px;
+      display: inline-block;
+      margin-right: 50px;
+      vertical-align: bottom; }
+      .museum-page .head-block .icon-span:hover {
+        text-decoration: none; }
+    .museum-page .head-block .i-wechat {
+      background: url("./../images/activities/museum/icon-wechat-white.png") no-repeat;
+      background-size: contain; }
+    .museum-page .head-block .i-weibo {
+      background: url("./../images/activities/museum/icon-weibo-white.png") no-repeat;
+      background-size: contain; }
+    .museum-page .head-block .i-instagram {
+      background: url("./../images/activities/museum/icon-instagram-white.png") no-repeat;
+      background-size: contain; }
+    .museum-page .head-block .i-email {
+      margin: 0;
+      background: url("./../images/activities/museum/icon-email-white.png") no-repeat;
+      background-size: contain; }
+  .museum-page .head-img {
+    height: 755px; }
+  .museum-page .head-title {
+    font-size: 36px;
+    margin-top: 125px;
+    margin-bottom: 38px; }
+  .museum-page .head-summary {
+    font-size: 18px;
+    text-align: center;
+    line-height: 2;
+    text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5); }
+  .museum-page .museum-body {
+    width: 1000px;
+    margin: 0 auto; }
+    .museum-page .museum-body .body-head {
+      text-align: center;
+      margin-bottom: 70px; }
+    .museum-page .museum-body .body-title {
+      color: #666;
+      font-size: 36px;
+      line-height: 36px;
+      font-weight: bolder;
+      margin-top: 95px;
+      margin-bottom: 36px; }
+    .museum-page .museum-body .body-summary {
+      color: #999;
+      font-size: 18px;
+      margin-bottom: 17px; }
+    .museum-page .museum-body .body-image {
+      width: 1000px;
+      height: 1400px;
+      margin-bottom: 135px;
+      background: url("http://hitour.qiniudn.com/cc22912f7fd9bb41be16e2bd19001e64.png") no-repeat;
+      background-size: contain; }
+  .museum-page .museum-foot {
+    background-color: #e2e2e2; }
+    .museum-page .museum-foot .rule-image {
+      width: 65px;
+      height: 50px;
+      margin-top: 27px;
+      margin-bottom: 20px; }
+    .museum-page .museum-foot .i-wechat {
+      background: url("./../images/activities/museum/icon-wechat-grey.png") no-repeat;
+      background-size: contain; }
+    .museum-page .museum-foot .i-weibo {
+      background: url("./../images/activities/museum/icon-weibo-grey.png") no-repeat;
+      background-size: contain; }
+    .museum-page .museum-foot .i-instagram {
+      background: url("./../images/activities/museum/icon-instagram-grey.png") no-repeat;
+      background-size: contain; }
+    .museum-page .museum-foot .i-email {
+      background: url("./../images/activities/museum/icon-email-grey.png") no-repeat;
+      background-size: contain; }
+    .museum-page .museum-foot .rule-summary {
+      font-size: 18px;
+      line-height: 2;
+      padding-bottom: 34px; }
+      .museum-page .museum-foot .rule-summary.side-by-side {
+        padding-bottom: 50px; }
+    .museum-page .museum-foot .one-rule {
+      float: left;
+      width: 140px;
+      margin-right: 50px; }
+      .museum-page .museum-foot .one-rule.last {
+        margin-right: 0; }
+      .museum-page .museum-foot .one-rule:hover {
+        text-decoration: none; }
+    .museum-page .museum-foot .rule-title {
+      color: #6db381; }
+    .museum-page .museum-foot .rule-brief {
+      color: #666; }
+    .museum-page .museum-foot .museum-rule {
+      width: 715px;
+      margin: 0 auto;
+      padding: 75px 0; }

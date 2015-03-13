@@ -1,0 +1,68 @@
+@import "common";
+
+body {
+  background: #ededed;
+}
+
+.dialog-zone {
+  width: 785px;
+  height: 380px;
+  margin: 145px auto;
+  background: $white;
+  .dialog-left, .dialog-right {
+    width: 50%;
+    float: left;
+    height: 100%;
+  }
+}
+
+.dialog-left {
+  border: 0px solid white;
+}
+.dialog-right {
+  text-align: center;
+  padding-top: 30px;
+  i {
+    font-size: 85px;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .success-icon {
+    color: $deep-green;
+    background-color: $white;
+  }
+  .failure-icon {
+    color: $orange;
+    background-color: $white;
+  }
+  .notification-title {
+    margin-top: 30px;
+    font-size: 34px;
+    color: black;
+    margin-bottom: 25px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .failure-content {
+    text-align: left;
+    margin-left: 35px;
+    margin-right: 35px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: $big-title-grey;
+    font-size: 14px;
+  }
+  .introduction {
+    color: $black;
+    font-size: 14px;
+    margin-top: 90px;
+  }
+  a {
+    color: $link-blue;
+    cursor: pointer;
+  }
+}
+.loading-mask{
+  display: none;
+}

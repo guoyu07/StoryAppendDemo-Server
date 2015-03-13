@@ -1,0 +1,68 @@
+@import "../flatly/less/variables.less";
+/*@import "../flatly/less/mixins.less";*/
+
+@white: #FFFFFF;
+@black: #000000;
+@red: #E74C3C;
+@pink: #E4014C;
+
+@title-black: #1B2129;
+@brand-primary-lite: #415B76;
+
+@beige: #EBEDEE;
+@blue-grey: #C2C8CE;
+
+@bg-lite: #f9fafb;
+@bg-dark: #dedfe0;
+@color-lite: #bdbdbd;
+@color-dark: #525252;
+
+@theme-green: #6db381;
+
+@radius: 4px;
+@root-width: 1206px;
+@grid-width: 18px;
+@grid-height: 20px;
+@header-height: 92px;
+
+@body-font: ceil(@font-size-base * 0.777);
+//~14px
+@body-font-large: ceil(@font-size-base * 0.888);
+//~16px
+@body-font-small: ceil(@font-size-base * 0.666);
+//~12px
+
+.font-icon() {
+    speak                   : none;
+    font-style              : normal;
+    font-family             : 'hitour';
+    font-weight             : normal;
+    font-variant            : normal;
+    text-transform          : none;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+.inline-block( @align: middle ) {
+    display        : inline-block;
+    vertical-align : @align;
+}
+
+.dragndrop() {
+    cursor : move;
+
+    &[draggable] {
+        user-select         : none;
+        -moz-user-select    : none;
+        -webkit-user-select : none;
+        -webkit-user-drag   : element;
+    }
+    &.hovering {
+        border : 3px dashed;
+    }
+    &.dragging {
+        opacity : 0.5;
+    }
+}

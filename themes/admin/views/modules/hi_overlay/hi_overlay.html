@@ -1,0 +1,14 @@
+<div class="overlay" ng-class="[options.type, options.class]" ng-show="local.has_overlay">
+	<div class="notify-container" ng-class="options.type" ng-show="options.type == 'alert'">
+		<div class="notify-body" ng-bind-html="options.message"></div>
+		<button class="block-action btn btn-inverse" ng-bind="options.buttons" ng-click="local.close_cb()"></button>
+	</div>
+	<div class="notify-container" ng-class="options.type" ng-show="options.type == 'confirm'">
+		<div class="notify-head" ng-bind="options.title"></div>
+		<div class="notify-body" ng-bind-html="options.message"></div>
+		<div class="notify-foot">
+			<button class="block-action btn btn-inverse" ng-repeat="button in options.buttons"
+			        ng-click="triggerCb( $index )" ng-bind="button.label"></button>
+		</div>
+	</div>
+</div>

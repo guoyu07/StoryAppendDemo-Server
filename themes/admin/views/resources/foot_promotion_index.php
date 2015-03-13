@@ -1,0 +1,1 @@
+<script src="themes/admin/views/admin/promotion/javascripts/promotionGridCtrl.js"></script>

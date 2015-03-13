@@ -1,0 +1,76 @@
+.breadcrumb .container {
+    width : 100%;
+}
+.breadcrumb .main-content {
+    width : 75%;
+}
+.product-head-name {
+    display: inline-block;
+    padding: 0;
+    width: 234px;
+    height: 24px;
+    overflow: hidden;
+    line-height: 39px;
+    font-size: 13px;
+}
+#product-edit-container {
+    position : relative;
+    #menu {
+        .list-group-item-text {
+            cursor : pointer;
+        }
+    }
+    #product_status {
+        margin-left : 56px;
+        .dropdown-toggle, .dropdown-menu {
+            width     : 100px;
+            min-width : 100px;
+        }
+        .status {
+            color   : @white;
+            cursor  : pointer;
+            margin  : 5px 15px;
+            padding : 5px;
+        }
+        .status, .dropdown-toggle {
+            &.edit {
+                background : @sun-flower;
+            }
+            &.review {
+                background : @orange;
+            }
+            &.onsale {
+                background : @brand-info;
+            }
+            &.offsale {
+                background : @title-black;
+            }
+        }
+    }
+    .loading-indicator {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        display: block;
+        position: fixed;
+        background: rgba(255, 255, 255, 0.8) url("../../../../images/common/partial_loading.gif") center center no-repeat;
+    }
+
+    @import "../routes/product_basic_info/less/product_basic_info";
+
+    @import "../routes/product_service/less/product_service";
+    @import "../routes/product_notice/less/product_notice";
+    @import "../routes/product_redeem/less/product_redeem";
+    @import "../routes/product_comment/less/product_comment";
+    @import "../routes/product_bundle/less/product_bundle";
+    @import "../routes/product_feedback/less/product_feedback";
+    @import "../routes/hotel_room/less/hotelRoom";
+
+    @import "../routes/product_price/less/product_price";
+
+    @import "../routes/product_seo/less/product_seo";
+    @import "../routes/coupon_template/less/coupon_template";
+    @import "../routes/product_price/less/product_price";
+}
