@@ -28,45 +28,20 @@ return array(
 
         'gii' => array(
             'class' => 'system.gii.GiiModule',
-            'password' => 'HelloHitour',
+            'password' => 'HelloEgg',
             'ipFilters' => array('127.0.0.1', '::1', '192.168.1.105', '114.243.211.67', '114.240.87.197', '61.48.43.86', '221.220.250.113', '114.243.29.173', '114.243.219.108'),
-        ),
-        'srbac' => array(
-            'userclass' => 'User',
-            'userid' => 'uid',
-            'username' => 'account',
-            'delimeter' => '@',
-            'debug' => false,
-            'pageSize' => 10,
-            'superUser' => 'Hitour',
-            'css' => 'srbac.css',
-            'layout' => 'application.views.layouts.main',
-            'notAuthorizedView' => 'srbac.views.authitem.unauthorized',
-            'alwaysAllowed' => array(
-                'SiteLogin', 'SiteLogout', 'SiteIndex', 'SiteAdmin',
-                'SiteError', 'SiteContact'
-            ),
-            'userActions' => array('Show', 'View', 'List'),
-            'listBoxNumberOfLines' => 15,
-            'imagesPath' => 'srbac.images',
-            'imagesPack' => 'tango',
-            'iconText' => true,
-            'header' => 'srbac.views.authitem.header',
-            'footer' => 'srbac.views.authitem.footer',
-            'showHeader' => true,
-            'showFooter' => true,
-            'alwaysAllowedPath' => 'srbac.components',
         )
     ),
 
     'components' => array(
 
         'db' => array(
-            //dev
-            'connectionString' => 'mysql:host=113.31.82.136;dbname=hitour', 'emulatePrepare' => true, 'username' => 'hitour', 'password' => 'cqzs01@hitour', 'charset' => 'utf8',
-            //test
-            //'connectionString' => 'mysql:host=test.hitour.cc:3310;dbname=hitour', 'emulatePrepare' => true, 'username' => 'hitour', 'password' => 'cqzs01@hitour', 'charset' => 'utf8',
-            //'connectionString' => 'mysql:host=localhost;dbname=hicart', 'emulatePrepare' => true, 'username' => 'root', 'password' => 'root', 'charset' => 'utf8',
+            //online
+//            'connectionString' => 'mysql:host=sqld.duapp.com;port:4050;dbname=iFckImZvEPSFwfjDrapF', 'emulatePrepare' => true, 'username' => 'hitour', 'password' => 'cqzs01@hitour', 'charset' => 'utf8',
+            //local
+//            'connectionString' => 'mysql:host=113.31.82.136;dbname=hitour', 'emulatePrepare' => true, 'username' => 'hitour', 'password' => 'cqzs01@hitour', 'charset' => 'utf8',
+
+            'connectionString' => 'mysql:host=127.0.0.1;dbname=hi_egg', 'emulatePrepare' => true, 'username' => 'root', 'password' => 'root', 'charset' => 'utf8',
         ),
         'log' => array(
             'class' => 'CLogRouter',
@@ -169,43 +144,5 @@ return array(
     ),
     'params' => array(
         'DEBUG' => false,
-
-        'testMail' => 'test@hitour.cc',
-        'adminEmail' => 'webmaster@example.com',
-
-        'urlPreview' => 'http://dev.hitour.cc/hitour/sightseeing/',
-        'urlPreviewOnTest' => 'http://dev.hitour.cc/product/index/product_id/',
-        'urlViewAlbum' => 'http://sandbox.hitour.cc/alpaca/index.php?r=Album/Edit&album_id=',
-        'urlHicartBase' => 'http://hicart.host/',
-
-        'MOBILE_DEV' => 1,
-
-        'PAYMENT_REALLY' => 0,
-        'INVOICE_PATH' => 'data/invoice/',
-        'WEB_PREFIX' => '/',
-        'THEME_BASE_URL' => '/themes/public',
-
-        'DIR_UPLOAD_ROOT' => '/var/www/admin/hitour/',
-        'HOME_IMAGE_ROOT' => '/image/upload/home_image/',
-        'TOUR_IMAGE_ROOT' => '/image/upload/tour_image/',
-        'EXPERT_IMAGE' => '/image/expert/',
-        'QR_IMAGE' => '/image/qr/',
-
-        'VOUCHER_PATH' => '/data/voucher/',
-        'PRODUCT_VOUCHER_PATH' => '/data/product/',
-        'DIR_PDF_SCRIPT' => '/home/app/bin/',
-        'STOCK_PDF_ROOT' => '/data/stock_pdf/',
-        'INSURANCE_FILE_ROOT' => '/data/insurance_excel/',
-        'IS_TEST' => 0,
-        'ATTACHED_VOUCHER_PATH' => '/data/attached_voucher/',
-        'DEPARTURES_FILE_ROOT' => '/data/departures/',
-        'urlPreviewOnTest' => 'http://test.hitour.cc/product/index/product_id/',
-        'urlViewCity' => 'http://test.hitour.cc/city/index/city_code/',
-
-        'urlHome' => 'http://admin.host/',
-        'WEIXIN_GATE' => 'http://test.hitour.cc:60001/push',
-        'BOOTSTRAP_BASE_URL' => '/themes/bootstrap',
-        'EDM_FILE_ROOT' => '/data/edms/',
-        'EDM_IMAGE_DIR' => '/themes/bootstrap/images/edm'
     )
 );
