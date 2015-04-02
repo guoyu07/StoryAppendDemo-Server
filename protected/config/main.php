@@ -37,7 +37,7 @@ return array(
 
         'db' => array(
             //online
-            'connectionString' => 'mysql:host=sqld.duapp.com;port:4050;dbname=iFckImZvEPSFwfjDrapF', 'emulatePrepare' => true, 'username' => '564c64fdfc5d44dd9bc824cc42676c7b', 'password' => 'a01df665466d4eafbe9e453744081e3e', 'charset' => 'utf8',
+            'connectionString' => 'mysql:host=sqld.duapp.com:4050;dbname=iFckImZvEPSFwfjDrapF', 'emulatePrepare' => true, 'username' => '564c64fdfc5d44dd9bc824cc42676c7b', 'password' => 'a01df665466d4eafbe9e453744081e3e', 'charset' => 'utf8',
             //local
 //            'connectionString' => 'mysql:host=127.0.0.1;dbname=hi_egg', 'emulatePrepare' => true, 'username' => 'root', 'password' => 'root', 'charset' => 'utf8',
         ),
