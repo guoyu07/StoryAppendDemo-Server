@@ -11,9 +11,8 @@ class HomeController extends Controller
 
     public function actionIndex()
     {
-        $data = $command->queryAll();
-
-        EchoUtility::echoMsgTF(true, '获取文章列表', $data);
+        var_dump(Yii::app()->db);
+//        EchoUtility::echoMsgTF(true, '获取文章列表', $data);
     }
 
     public function actionTestInt()
