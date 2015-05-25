@@ -4,7 +4,7 @@
  * Controller is the customized base controller class.
  * All controller classes for this application should extend from this base class.
  */
-class AdminController extends CController
+class BaseController extends CController
 {
     /**
      * @var string the default layout for the controller view. Defaults to '//layouts/center',
@@ -31,57 +31,9 @@ class AdminController extends CController
         return $_GET + $_POST;
     }
 
-    public function filterAccessControl($filterChain)
-    {
-        if (Yii::app()->user->isGuest) {
-            $this->redirect($this->createUrl('site/login'));
-        } else {
-            if (Yii::app()->user->checkAccess('HT_View')) {
-                $filterChain->run();
-            } else {
-                $this->redirect($this->createUrl('site/login'));
-            }
-        }
-    }
-
-    public function filters()
-    {
-        return array(
-            'accessControl'
-        );
-    }
-
     public function init()
     {
-        Yii::app()->theme = 'admin';
-        $this->fe_options['is_test'] = Yii::app()->params['IS_TEST'];
-        $this->request_urls = array(
-            'baseUrl' => Yii::app()->getBaseUrl(true),
-            'themeUrl' => Yii::app()->theme->baseUrl,
-            'onlineUrl' => 'http://hitour.cc',
-            //Site Pages
-            'viewHomeUrl' => Yii::app()->getBaseUrl(true),
-            'editHomeUrl' => $this->createUrl('home/index'),
-            'viewCountryUrl' => $this->createFrontUrl('country/index', array('country_name' => '')),
-            'editCountryUrl' => $this->createUrl('country/edit', array('country_code' => '')),
-            'viewCityUrl' => $this->createFrontUrl('city/index', array('country_name' => 'XXX', 'city_name' => '')),
-            'editCityUrl' => $this->createUrl('city/edit', array('city_code' => '')),
-            'viewProductOnTestUrl' => Yii::app()->params['urlPreviewOnTest'],
-            'viewProductUrl' => $this->createFrontUrl('product/index', array('product_id' => '')),
-            'editProductUrl' => $this->createUrl('product/edit', array('product_id' => '')),
-            //Backend Pages - Coupon
-            'listCouponUrl' => $this->createUrl('coupon/index'),
-            'editCouponUrl' => $this->createUrl('coupon/edit', array('coupon_id' => '')),
-            'editCouponTemplateUrl' => $this->createUrl('coupon/template', array('template_id' => '')),
-            //Backend Pages - Promotion
-            'listPromotionUrl' => $this->createUrl('promotion/index'),
-            'editPromotionUrl' => $this->createUrl('promotion/edit', array('promotion_id' => '')),
-            'previewPromotionUrl' => $this->createUrl('promotion/edit', array('promotion_id' => '')),
-            //Ajax Requests
-            'fetchCities' => $this->createUrl('city/getCities'),
-            'fetchCountries' => $this->createUrl('country/getCountries'),
-            'fetchSuppliers' => $this->createUrl('supplier/getSuppliers'),
-        );
+
     }
 
     public function getParam($name, $defaultValue = null)

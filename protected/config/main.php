@@ -28,7 +28,7 @@ return array(
 
         'gii' => array(
             'class' => 'system.gii.GiiModule',
-            'password' => 'HelloEgg',
+            'password' => 'egg',
             'ipFilters' => array('127.0.0.1', '::1', '192.168.1.105', '114.243.211.67', '114.240.87.197', '61.48.43.86', '221.220.250.113', '114.243.29.173', '114.243.219.108'),
         )
     ),
@@ -37,23 +37,22 @@ return array(
 
         'db' => array(
             //online
-            'connectionString' => 'mysql:host=sqld.duapp.com;port=4050;dbname=qJpmwgSdbskBxLaBpUJX', 'emulatePrepare' => true, 'username' => '564c64fdfc5d44dd9bc824cc42676c7b', 'password' => 'a01df665466d4eafbe9e453744081e3e', 'charset' => 'utf8',
+//            'connectionString' => 'mysql:host=sqld.duapp.com;port=4050;dbname=qJpmwgSdbskBxLaBpUJX', 'emulatePrepare' => true, 'username' => '564c64fdfc5d44dd9bc824cc42676c7b', 'password' => 'a01df665466d4eafbe9e453744081e3e', 'charset' => 'utf8',
             //local
-//            'connectionString' => 'mysql:host=127.0.0.1;dbname=hi_egg', 'emulatePrepare' => true, 'username' => 'root', 'password' => 'root', 'charset' => 'utf8',
+            'connectionString' => 'mysql:host=127.0.0.1;dbname=hi_egg', 'emulatePrepare' => true, 'username' => 'root', 'password' => 'root', 'charset' => 'utf8',
         ),
         'log' => array(
             'class' => 'CLogRouter',
             'routes' => array(
                 array(
                     'class' => 'CFileLogRoute',
-                    'levels' => 'error, warning, info',
+                    'levels' => 'trace,log',
+                    'categories' => 'system.db.CDbCommand',
+                    'logFile' => 'db.log',
                 ),
                 array(
                     'class' => 'CFileLogRoute',
-                    'levels' => 'trace, info, debug, warn, error, fatal, profile',
-                    'categories' => 'mail.*',
-                    'maxFileSize' => 1024, //单文件最大1M
-                    'logFile' => 'mail.log',
+                    'levels' => 'error, warning, info',
                 ),
             ),
         ),
@@ -69,7 +68,7 @@ return array(
 //        'urlManager' => array(
 //            'showScriptName' => false,
 //            'urlFormat' => 'path',
-//            'urlSuffix' => '.html'
+//            'urlSuffix' => '.html',
 //            'routeVar' => 'route',
 //            'rules' => array(
 //                '' => 'home/index',
@@ -125,20 +124,7 @@ return array(
         ),
 
         /* Custom Components */
-        'cart' => ['class' => 'application.service.Cart'],
-        'order' => ['class' => 'application.service.Order'],
-        'notify' => ['class' => 'application.service.Notify'],
-        'booking' => ['class' => 'application.service.Booking'],
-        'product' => ['class' => 'application.service.Product'],
-        'shipping' => ['class' => 'application.service.Shipping'],
-        'customer' => array('class' => 'application.library.Customer'),
-        'returning' => ['class' => 'application.service.Returning'],
-        'stateMachine' => array('class' => 'application.service.StateMachine'),
-        'activity' =>['class'=>'application.service.Activity'],
-        'weixin_notify' =>['class'=>'application.service.WeixinNotify'],
-        'email_notify' =>['class'=>'application.service.EmailNotify'],
-        'sms_notify' =>['class'=>'application.service.SmsNotify'],
-        'weixin_notify' => ['class' => 'application.service.WeixinNotify'],
+        'time_service' => ['class' => 'application.service.TimeService'],
     ),
     'params' => array(
         'DEBUG' => false,
