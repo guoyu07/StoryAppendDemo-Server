@@ -118,11 +118,17 @@ class HiCustomer extends CActiveRecord
 		return parent::model($className);
 	}
 
-    public function defaultScope()
-    {
-        return array(
-            'alias' => 'c',
-            'order' => 'c.customer_id DESC'
-        );
-    }
+//    public function defaultScope()
+//    {
+//        static $counter = 0;
+
+//        return array(
+//            'alias' => ($counter++),
+//            'order' => 'c.customer_id DESC'
+//        );
+//        return array(
+//            'alias' => 'c',
+//            'order' => 'c.customer_id DESC'
+//        );
+//    }
 }

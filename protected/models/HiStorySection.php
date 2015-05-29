@@ -46,7 +46,8 @@ class HiStorySection extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-		);
+            'customer'   => array(self::HAS_ONE, 'HiCustomer', '', 'on' => 'ss.customer_id = cr.customer_id', 'alias' => 'cr'),
+        );
 	}
 
 	/**
@@ -104,4 +105,11 @@ class HiStorySection extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+    public function defaultScope()
+    {
+        return array(
+            'alias' => 'ss',
+            'order' => 'ss.section_layer ASC');
+    }
 }

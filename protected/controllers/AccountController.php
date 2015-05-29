@@ -47,6 +47,16 @@ class AccountController extends BaseController {
             $customer['bind_third'] = $bind_third;
 
             $customer->insert();
+        } else {
+            $customer['screen_name'] = $screen_name;
+            $customer['avatar_url'] = $avatar_url;
+            $customer['sex'] = $sex;
+            $customer['city'] = $city;
+            $customer['province'] = $province;
+            $customer['birthday'] = $birthday;
+            $customer['openid'] = $openid;
+            $customer['bind_third'] = $bind_third;
+            $customer->update();
         }
 
         EchoUtility::echoMsgTF(true, '登录', $customer);

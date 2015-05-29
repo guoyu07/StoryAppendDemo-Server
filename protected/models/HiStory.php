@@ -44,7 +44,8 @@ class HiStory extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-            'customer'   => array(self::HAS_ONE, 'HiCustomer', '', 'on' => 's.customer_id = c.customer_id'),
+            'customer'   => array(self::HAS_ONE, 'HiCustomer', '', 'on' => 's.customer_id = cs.customer_id', 'alias' => 'cs'),
+            'section'   => array(self::HAS_ONE, 'HiStorySection', '', 'on' => 's.story_id = ss.story_id and ss.section_group = 1 and ss.section_layer = 1'),
         );
 	}
 
