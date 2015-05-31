@@ -47,6 +47,7 @@ class HiStorySection extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
             'customer'   => array(self::HAS_ONE, 'HiCustomer', '', 'on' => 'ss.customer_id = cr.customer_id', 'alias' => 'cr'),
+            'comments' => array(self::HAS_MANY, 'HiStoryComment', '', 'on' => 'ss.section_id = sc.section_id'),
         );
 	}
 
@@ -94,6 +95,15 @@ class HiStorySection extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+    public function findMaxGroup($parent_id){
+        $sql = 'select max(section_group) from hi_story_section where parent_id = '. $parent_id;
+        $connection = Yii::app()->db;
+        $command = $connection->createCommand($sql);
+
+        $result = $command->queryAll();
+        return $result[0]['max(section_group)'];
+    }
 
 	/**
 	 * Returns the static model of the specified AR class.

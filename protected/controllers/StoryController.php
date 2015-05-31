@@ -22,6 +22,54 @@ class StoryController extends BaseController {
         EchoUtility::echoMsgTF(true, '手动插入');
     }
 
+    public function actionAddStory() {
+        $customer_id = $this->getParam('customer_id');
+        $title = $this->getParam('title');
+        $content = $this->getParam('content');
+        $story = new HiStory();
+        $story['title'] = $title;
+        $story['content'] = $content;
+        $story['customer_id'] = $customer_id;
+        $story['insert_time'] = date('Y-m-d H:i:s',time());
+        $story->insert();
+        EchoUtility::echoMsgTF(true, '添加段子', $story);
+    }
+
+    public function actionAddGetSection() {
+        $section_id = $this->getParam('section_id');
+        $section = Converter::convertModelToArray(HiStorySection::model()->with('customer')->findByPk($section_id));
+        EchoUtility::echoMsgTF(true, '获取段子', $section);
+    }
+
+    public function actionAddGetStory() {
+        $story_id = $this->getParam('story_id');
+        $story = Converter::convertModelToArray(HiStory::model()->with('customer')->findByPk($story_id));
+        EchoUtility::echoMsgTF(true, '获取段子', $story);
+    }
+
+    public function actionAddSection() {
+        $story_id = $this->getParam('story_id');
+        $section_layer = $this->getParam('section_layer');
+        $parent_id = $this->getParam('parent_id');
+        $content = $this->getParam('content');
+        $customer_id = $this->getParam('customer_id');
+        $section = new HiStorySection();
+        $section['content'] = $content;
+        $section['story_id'] = $story_id;
+        $section['customer_id'] = $customer_id;
+        $currentGroup = HiStorySection::model()->findMaxGroup($parent_id);
+        if(isset($currentGroup)) {
+            $section['section_group'] = ((int)$currentGroup) + 1;
+        } else {
+            $section['section_group'] = 1;
+        }
+        $section['section_layer'] = $section_layer;
+        $section['parent_id'] = $parent_id;
+        $section['insert_time'] = date('Y-m-d H:i:s',time());
+        $section->insert();
+        EchoUtility::echoMsgTF(true, '获取段子', $section);
+    }
+
     public function actionGetStoryById() {
         $story_id = $this->getParam('story_id');
         $customer_id = $this->getParam('customer_id');
