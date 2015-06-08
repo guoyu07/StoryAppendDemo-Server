@@ -62,4 +62,28 @@ class AccountController extends BaseController {
         EchoUtility::echoMsgTF(true, '登录', $customer);
     }
 
+    public function actionGetFavouriteStory() {
+        $customer_id = $this->getParam("customer_id");
+        $ids = HiStoryFavourite::model()->findByAttributes(array('customer_id' => $customer_id));
+        $result = array();
+        if(!empty($ids)){
+            $c = new CDbCriteria();
+            $c->addInCondition('story_id', json_decode($ids['story_ids']));
+            $result = Converter::convertModelToArray(HiStory::model()->with('customer')->findAll($c));
+        }
+        EchoUtility::echoMsgTF(true, '获取收藏的故事', $result);
+    }
+
+    public function actionGetFavouritePushArticle() {
+        $customer_id = $this->getParam("customer_id");
+        $ids = HiPushArticleFavourite::model()->findByAttributes(array('customer_id' => $customer_id));
+        $result = array();
+        if(!empty($ids)){
+            $c = new CDbCriteria();
+            $c->addInCondition('article_id', json_decode($ids['article_ids']));
+            $result = Converter::convertModelToArray(HiPushArticle::model()->findAll($c));
+        }
+        EchoUtility::echoMsgTF(true, '获取收藏的故事', $result);
+    }
+
 }
