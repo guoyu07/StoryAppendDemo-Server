@@ -1,22 +1,23 @@
 <?php
 
 /**
- * This is the model class for table "hi_story_comment".
+ * This is the model class for table "hi_question_answer".
  *
- * The followings are the available columns in table 'hi_story_comment':
- * @property string $comment_id
+ * The followings are the available columns in table 'hi_question_answer':
+ * @property string $answer_id
  * @property string $content
  * @property integer $customer_id
- * @property integer $story_id
+ * @property integer $question_id
+ * @property string $insert_date
  */
-class HiStoryComment extends CActiveRecord
+class HiQuestionAnswer extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'hi_story_comment';
+		return 'hi_question_answer';
 	}
 
 	/**
@@ -27,11 +28,11 @@ class HiStoryComment extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('content, customer_id, story_id', 'required'),
-			array('customer_id, story_id', 'numerical', 'integerOnly'=>true),
+			array('content, customer_id, question_id, insert_date', 'required'),
+			array('customer_id, question_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('comment_id, content, customer_id, story_id', 'safe', 'on'=>'search'),
+			array('answer_id, content, customer_id, question_id, insert_date', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -43,8 +44,7 @@ class HiStoryComment extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-            'customer'   => array(self::HAS_ONE, 'HiCustomer', '', 'on' => 'sc.customer_id = cs.customer_id', 'alias' => 'cs'),
-            'story'   => array(self::HAS_ONE, 'HiStory', '', 'on' => 'sc.story_id = s.story_id'),
+            'customer'   => array(self::HAS_ONE, 'HiCustomer', '', 'on' => 'qa.customer_id = ccs.customer_id', 'alias' => 'ccs'),
         );
 	}
 
@@ -54,10 +54,11 @@ class HiStoryComment extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'comment_id' => 'Comment',
+			'answer_id' => 'Answer',
 			'content' => 'Content',
 			'customer_id' => 'Customer',
-			'story_id' => 'Story',
+			'question_id' => 'Question',
+			'insert_date' => 'Insert Date',
 		);
 	}
 
@@ -79,10 +80,11 @@ class HiStoryComment extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('comment_id',$this->comment_id,true);
+		$criteria->compare('answer_id',$this->answer_id,true);
 		$criteria->compare('content',$this->content,true);
 		$criteria->compare('customer_id',$this->customer_id);
-		$criteria->compare('story_id',$this->story_id);
+		$criteria->compare('question_id',$this->question_id);
+		$criteria->compare('insert_date',$this->insert_date,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -93,7 +95,7 @@ class HiStoryComment extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return HiStoryComment the static model class
+	 * @return HiQuestionAnswer the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -103,7 +105,7 @@ class HiStoryComment extends CActiveRecord
     public function defaultScope()
     {
         return array(
-            'alias' => 'sc',
-            'order' => 'sc.comment_id DESC');
+            'alias' => 'qa',
+            'order' => 'qa.answer_id DESC');
     }
 }

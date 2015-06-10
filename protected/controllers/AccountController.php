@@ -86,4 +86,13 @@ class AccountController extends BaseController {
         EchoUtility::echoMsgTF(true, '获取收藏的故事', $result);
     }
 
+    public function actionGetMyComment() {
+        $orig_customer_id = $this->getParam("customer_id");
+        $c = new CDbCriteria();
+        $c->addCondition('sc.orig_customer_id = ' . $orig_customer_id);
+        $c->group = 'sc.story_id';
+        $comments = Converter::convertModelToArray(HiStoryComment::model()->with('story', 'customer')->findAll($c));
+        EchoUtility::echoMsgTF(true, '获取评论', $comments);
+    }
+
 }
